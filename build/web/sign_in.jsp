@@ -97,6 +97,9 @@
                     <option value="2006">2006</option><option value="2005">2005</option>
                     <option value="2004">2004</option><option value="2003">2003</option>
                     <option value="2002">2002</option><option value="2003">2001</option>
+                    <option value="2002">2000</option><option value="2003">1999</option>
+                    <option value="2002">1998</option><option value="2003">1997</option>
+                    <option value="2002">1996</option><option value="2003">1995</option>
                 </select><br><br>
                 Ingresa tu Nacionalidad:
                 <select name ="nationality">

@@ -14,8 +14,8 @@
         <!-- Example row of columns -->
         <div class="row">
           <div class="col-md-4">
-            <h2>Noticia1</h2>
-            <p>Valve anuncia HalfLife 3</p>
+            <h2>Valve anuncia HalfLife 3</h2>
+            <p>Todos sabemos que no va a pasar #laurasad</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
