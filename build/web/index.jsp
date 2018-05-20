@@ -5,7 +5,7 @@
       <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">Bienvenidos a Infinite!</h1>
-          <p>Una tienda virtual de cosas virtuales :v</p>
+          <p>Una tienda virtual de cosa virtuales :v</p>
           <p><a class="btn btn-primary btn-lg" href="sign_in.jsp" role="button">¡Regístrate ya! &raquo;</a></p>
         </div>
       </div>
