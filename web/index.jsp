@@ -5,7 +5,7 @@
       <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">Bienvenidos a Infinite!</h1>
-          <p>Una tienda virtual de cosa virtuales :v</p>
+          <p>Una tienda virtual de cosas virtuales :v</p>
           <p><a class="btn btn-primary btn-lg" href="sign_in.jsp" role="button">¡Regístrate ya! &raquo;</a></p>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-md-4">
             <h2>Noticia1</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Valve anuncia HalfLife 3</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
