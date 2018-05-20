@@ -170,6 +170,9 @@ public class user {
     public void add_all_users() {
         all_users.put(this.get_nikname(), this);
     }
+    public static int get_all(){
+        return all_users.size();
+    }
 
     public user(String name, String nikname, String email, String birth_date, String nationality, String password, double money) {
 

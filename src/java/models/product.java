@@ -66,7 +66,7 @@ public class product {
         this.solds = solds;
     }
     
-    product(String name, String descripcion, seller seller, int price, String category){
+    public product(String name, String descripcion, seller seller, int price, String category){
         HashMap<Integer ,String> comment_list= new HashMap<Integer, String>();
         this.set_name(name);
         this.set_description(description);
