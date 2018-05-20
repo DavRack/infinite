@@ -11,8 +11,11 @@
         <br>
         <div class="container">
             <h1>
-                Bienvenido, <%out.println(models.user.get_active_user().get_nikname());%><br><br>
+                Bienvenido, <%out.println(models.user.get_active_user().get_nikname());%><br>
             </h1>
+            <h5>
+                Te has logeado como comprador
+            </h5><br>
             <h5>
                 ¿Qué desea hacer a continuación?
             </h5>
