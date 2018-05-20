@@ -31,7 +31,9 @@
                         <a class="navbar-brand " href="sign_in.jsp">sign in</a>
                     </li>
                     <form action="Datos1" method="post">
-                        <button class="nav-link disabled" href="">Generar Datos</button>
+                        <li class="nav-item">
+                            <input type="submit" class="navbar-brand" href="#" style="border: 0;background-color: transparent" value="Generar Datos">
+                        </li>
                     </form>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Generar Datos desde un txt</a>
