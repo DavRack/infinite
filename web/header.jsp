@@ -25,6 +25,9 @@
             </div>
           </li>
           <li class="nav-item">
+            <a class="nav-link disabled" href="login.jsp">log in</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
           <li class="nav-item dropdown">
