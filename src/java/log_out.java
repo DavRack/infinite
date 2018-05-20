@@ -1,5 +1,4 @@
 /*
- * sign in
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -15,10 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author pavilion
+ * @author David
  */
-@WebServlet(urlPatterns = {"/Search_Products"})
-public class Search_Products extends HttpServlet {
+@WebServlet(urlPatterns = {"/log_out"})
+public class log_out extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,15 +30,10 @@ public class Search_Products extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            String a = request.getParameter("id");
-            out.println(a);
-            if(request.getParameter("name").equals("categories")){
-                out.print("ok");
-            }
-            
-        }
+        models.user.log_out();
+        response.sendRedirect("index.jsp");
+    
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

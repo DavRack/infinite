@@ -20,6 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 public class Servlet2 extends HttpServlet {
 
     /**
+     * log in
+     * 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
