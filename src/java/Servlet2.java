@@ -43,8 +43,8 @@ public class Servlet2 extends HttpServlet {
                 models.user.log_in_by_nikname(nickname);
                 response.sendRedirect("Postlog_lobby.jsp");
             } else {
-                //response.sendRedirect("login.jsp");
-                out.print( models.user.get_all());
+                response.sendRedirect("login.jsp");
+                
                 
             }
         }

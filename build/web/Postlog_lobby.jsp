@@ -31,7 +31,7 @@
             <a class="btn btn-secondary" href="Profile.jsp" role="button">Ver mi perfil</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Agregar más dinero a la cuenta</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Agregar un amigo</a>
-            <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver el Usuario Más Activo</a>
+            <a class="btn btn-secondary" href="mas_activo.jsp" role="button">Ver el Usuario Más Activo</a>
             <br><br><br>
             ¿Guargar datos?<br><br>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">¿Guargar datos?</a><br><br><br>
