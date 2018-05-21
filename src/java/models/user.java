@@ -181,7 +181,7 @@ public class user {
     public user(String name, String nikname, String email, String birth_date, String nationality, String password, double money) {
 
         LinkedList<user> friends = new LinkedList<>();
-        LinkedList<product> whistlist = new LinkedList<>();
+        LinkedList<product> wishlist = new LinkedList<>();
         LinkedList<product> bill_list = new LinkedList<>();
         LinkedList<product> product_list = new LinkedList<>();
         this.set_name(name);
