@@ -4,9 +4,17 @@
         <servlet-name>catalogo</servlet-name>
         <servlet-class>catalogo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>eliminar</servlet-name>
+        <servlet-class>eliminar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>catalogo</servlet-name>
         <url-pattern>/catalogo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>eliminar</servlet-name>
+        <url-pattern>/eliminar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
