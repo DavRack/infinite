@@ -25,7 +25,6 @@
                 ¿Qué desea hacer a continuación?
             </h5>
             <br><br>
-            <% out.println(models.user.get_active_user().get_product_list().size()); %>
             Producto:
             <br><br>
             <a class="btn btn-secondary" href="New_game.jsp" id="categories" role="button">Poner a la venta un producto nuevo</a>
