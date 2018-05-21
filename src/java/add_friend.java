@@ -29,10 +29,22 @@ public class add_friend extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        String nickname = request.getParameter("nickname");
-        models.user.get_active_user().add_friend(models.user.all_users.get(nickname));
-        response.sendRedirect("Postlog_lobby.jsp");
+            throws ServletException, IOException, NullPointerException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            String nickname = request.getParameter("nickname");
+            if (!models.user.all_users.isEmpty()) {
+                if (models.user.all_users.containsKey(nickname)) {
+                    models.user.get_active_user().add_friend(models.user.all_users.get(nickname));
+                    response.sendRedirect("Postlog_lobby.jsp");
+                } else {
+                    System.out.println("No se ha encontrado ningun registro en la base de datos");
+                }
+            } else {
+                response.sendRedirect("Postlog_lobby.jsp");
+            }
+
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
