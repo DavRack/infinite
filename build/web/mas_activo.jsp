@@ -15,12 +15,9 @@
     </head>
     <body><br><br>
         <div class="container">
-            <div class="container">
-                <div class="jumbotron">
-                    <h1>El usuario más activo es:</h1> 
-                    <p><%out.println(models.user.get_most_active_user());%></p> 
-                </div>
-
+            <div class="jumbotron">
+                <h1>El usuario más activo es:</h1> 
+                <h2><%out.println(models.user.get_most_active_user());%></h2> 
             </div>
         </div>
     </body>
