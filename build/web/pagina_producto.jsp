@@ -21,8 +21,8 @@
                     <div class="col-md-6">                            
                         <div class="jumbotron">
                             <h2>Categoria:</h2><h3> <%out.println(producto.get_category());%></h3><br><br>
-                            <h2>
-                                Descripcion: </h2><h4><p><%out.println(producto.get_description());%></p></h4>
+                            <h2>Descripcion: </h2><h4><p><%out.println(producto.get_description());%></p></h4><br>
+                            <h2>Vendedor: </h2><h3><%out.println(producto.get_seller());%></h3>
                         </div>
                     </div>
                     <div class="col-md-6">
