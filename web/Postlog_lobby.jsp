@@ -39,7 +39,7 @@
                 <div id="demo" class="collapse"><br>
                     <input type="text" name="money" class="form-control" placeholder="Introduzca dinero" required>
                     <br>
-                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
                 </div>
             </form>
             <br><br><br>
