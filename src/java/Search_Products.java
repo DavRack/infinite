@@ -34,7 +34,7 @@ public class Search_Products extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             String a = request.getParameter("search");
-            response.sendRedirect("Search.jsp");
+            out.println(a);
             
             
         }

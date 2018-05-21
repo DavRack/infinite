@@ -18,26 +18,10 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="navbar-brand " href=<%if (models.user.get_active_user() == null) {
-                                out.println("login.jsp");
-                            } else {
-                                models.user.go_home();
-                            }%>><%if (models.user.get_active_user() == null) {
-                                out.println("Log in");
-                            } else {
-                                out.println("Home");
-                            }%></a>
+                        <a class="navbar-brand " href=<%if(models.user.get_active_user()== null){out.println("login.jsp");}else{models.user.go_home();}%>><%if(models.user.get_active_user()== null){out.println("Log in");}else{out.println("Home");}%></a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand " href=<%if (models.user.get_active_user() == null) {
-                                out.println("sign_in.jsp");
-                            } else {
-                                out.println("log_out");
-                            }%>><%if (models.user.get_active_user() == null) {
-                                out.println("Sign In");
-                            } else {
-                                out.println("Log Out");
-                            }%></a>
+                        <a class="navbar-brand " href=<%if(models.user.get_active_user()== null){out.println("sign_in.jsp");}else{out.println("log_out");}%>><%if(models.user.get_active_user()== null){out.println("Sign In");}else{out.println("Log Out");}%></a>
                     </li>
                     <form action="Datos1" method="post">
                         <li class="nav-item">
@@ -48,9 +32,9 @@
                         <a class="nav-link disabled" href="#">Generar Datos desde un txt</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" action='Search_Products' method="post">
+                <form action='Search_Products'method='post'>
                     <input class="form-control mr-sm-2" type="text" placeholder="Buscar un producto" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" name='search' type="text">Buscar</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
