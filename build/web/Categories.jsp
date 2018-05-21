@@ -14,7 +14,7 @@
     <body>
         <div class="container">
         <h3><br><br><br>
-            Las categorias deisponibles actualmente son:
+            Las categorias dis ponibles actualmente son:
         </h3>
         <a class="btn btn-secondary" href="Servlet_Users" role="button">Acción</a>
         <a class="btn btn-secondary" href="Servlet_Users" role="button">Aventuras</a>
