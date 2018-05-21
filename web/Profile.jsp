@@ -19,7 +19,10 @@
             Nombre: <%out.println(usuario.get_name());%><br>
             Username: <%out.println(usuario.get_nikname());%><br>
             e-mail: <%out.println(usuario.get_email());%><br>
+            Fecha de Nacimiento: <%out.println(usuario.get_birth_date());%><br>
+            País de origen: <%out.println(usuario.get_nationality());%><br>
             Cantidad de dinero que posee actualmente: <%out.println(usuario.get_money());%><br>
+            
             </h5>
         </div>
     </body>
