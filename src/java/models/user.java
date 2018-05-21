@@ -325,4 +325,18 @@ public class user {
         }
         return null;
     }
+    
+    public static String get_most_active_user(){
+        int max = 0;
+        String nickname = "";
+        for (HashMap.Entry<String, user> entry : users.entrySet()) {
+            if (users.get(entry.getKey()).get_activity() > max) {
+                max =users.get(entry.getKey()).get_activity();
+                nickname=entry.getKey();
+            }
+        }
+        
+        
+        return nickname;
+    }
 }

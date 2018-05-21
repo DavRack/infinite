@@ -4,6 +4,7 @@
     Author     : David
 --%>
 
+<%@page import="models.user"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ include file="header.jsp" %>
 <!DOCTYPE html>
@@ -16,9 +17,8 @@
         <div class="container">
             <div class="container">
                 <div class="jumbotron">
-                    <h1>Bootstrap Tutorial</h1> 
-                    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-                        responsive, mobile-first projects on the web.</p> 
+                    <h1>El usuario más activo es:</h1> 
+                    <p><%out.println(models.user.get_most_active_user());%></p> 
                 </div>
 
             </div>
