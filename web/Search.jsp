@@ -13,11 +13,16 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <br>
         <div class="container">
-            
+            <br><br>
+
+            <h1 class='display-2'>Resultados de la búsqueda</h1>
+
+            <br><br>
+            <br>
+
             <%int l = models.product.busqueda_actual.size();%>
-            <%if(l>0){%>
+            <%if (l > 0) {%>
             <%for (int i = 0; i < l; i++) {
                     models.product producto = models.product.busqueda_actual.get(i);
             %>
@@ -28,12 +33,13 @@
                 <h2>Descripcion: </h2>
                 <h4><%out.println(producto.get_description());%></h4>
             </div>
-            <%}}else{%>
+            <%}
+            } else {%>
             <div class="jumbotron">
                 <h2>Ningun resultado</h2>
             </div>
             <%}%>
-            
+
         </div>
     </body>
 </html>

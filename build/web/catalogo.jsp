@@ -9,6 +9,11 @@
     <body>
         <br>
         <div class="container">
+            <br><br>
+            
+            <h1 class='display-2'>Catálogo</h1>
+            
+            <br><br>
             
             <%int l = models.product.get_products().size();%>
             <%if(l>0){%>
