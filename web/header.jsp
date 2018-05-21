@@ -17,13 +17,6 @@
 
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accede a nuestros servicios</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="login.jsp">¿Ya tienes una cuenta?. Entra aquí </a>
-                            <a class="dropdown-item" href="sign_in.jsp">¿No tienes una cuenta?. Regístrate </a>
-                        </div>
-                    </li>
                     <li class="nav-item">
                         <a class="navbar-brand " href="login.jsp">log in</a>
                     </li>
