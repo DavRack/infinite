@@ -26,9 +26,11 @@
                         out.print(pro.toString());
                     }
                 }else{
-                    out.println("De momento, usted no tiene productos en su lista de desados");
+                    out.println("De momento, usted no tiene productos en su lista de desados.");
                 }
             %>
         </div>
     </body>
 </html>
+
+<%@ include file="footer.jsp" %>

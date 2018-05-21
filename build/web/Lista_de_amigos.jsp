@@ -15,18 +15,18 @@
     </head>
     <body>
         <div class="container"><br><br>
-            <h1>Lista de deseados</h1><br><br>
+            <h1>Lista de amigos</h1><br><br>
             <%
-                LinkedList lista = models.user.get_active_user().get_whishlist();
+                LinkedList lista = models.user.get_active_user().get_friendlist();
                 System.out.println(lista);
                 Iterator iter = lista.iterator();
                 if (!lista.isEmpty()) {
                     while (iter.hasNext()) {
-                        models.product pro = (models.product) iter.next();
-                        out.print(pro.toString());
+                        models.user ami = (models.user) iter.next();
+                        out.print(ami.toString());
                     }
                 }else{
-                    out.println("De momento, usted no tiene productos en su lista de desados.");
+                    out.println("De momento, usted no tiene amigos.");
                 }
             %>
         </div>
