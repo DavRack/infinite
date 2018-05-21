@@ -79,6 +79,11 @@ public class product {
     public void set_solds(int solds) {
         this.solds = solds;
     }
+    
+    public static LinkedList get_products(){
+        return products;
+    }
+
 
     public product(String name, String descripcion, seller seller, int price, String category) {
         LinkedList<String> comment_list = new LinkedList<String>();
