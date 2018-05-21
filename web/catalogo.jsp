@@ -15,6 +15,7 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Categoria</th>
                         <th scope="col">Vendedor</th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <%
@@ -31,6 +32,7 @@
                         <td><% out.println(name); %></td>
                         <td><% out.println(category); %></td>
                         <td><% out.println(seller); %></td>
+                        <td><a class="btn btn-secondary" href="#" role="button">Ir</a></td>
                     </tr>
                 </tbody>
                 <%
