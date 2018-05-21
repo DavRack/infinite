@@ -51,10 +51,6 @@
                                 mi codigo, debo codificar antes que ataquen los bugs que tratan de destruirme.
                             </p>
                         </div>
-                        <div class="jumbotron">
-                            <p>comentario de prueba 2</P>
-                        </div>
-
                     </div>
                 </div>
             </div>
