@@ -7,37 +7,27 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <div class="container"><br>
-            <h1>Catálogo</h1><br><br>
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Vendedor</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <%
-                    LinkedList lista = models.product.get_products();
-                    Iterator iter = lista.iterator();
-                    while (iter.hasNext()) {
-                        models.product pro = (models.product) iter.next();
-                        String name = pro.get_name();
-                        String category = pro.get_category();
-                        String seller = pro.get_seller().get_name();
-                %>
-                <tbody>
-                    <tr>
-                        <td><% out.println(name); %></td>
-                        <td><% out.println(category); %></td>
-                        <td><% out.println(seller); %></td>
-                        <td><a class="btn btn-secondary" href="#" role="button">Ir</a></td>
-                    </tr>
-                </tbody>
-                <%
-                    }%>
-            </table>
+        <br>
+        <div class="container">
+            
+            <%int l = models.product.get_products().size();%>
+            <%if(l>0){%>
+            <%for (int i = 0; i < l; i++) {
+                    models.product producto = (models.product)models.product.get_products().get(i);
+            %>
+
+            <div class="jumbotron">
+                <h2>Nombre: <%out.println(producto.get_name());%></h2>
+                <h2>Precio: <%out.println(producto.get_price());%></h2>
+                <h2>Descripcion: </h2>
+                <h4><%out.println(producto.get_description());%></h4>
+            </div>
+            <%}}else{%>
+            <div class="jumbotron">
+                <h2>Ningun resultado</h2>
+            </div>
+            <%}%>
+            
         </div>
     </body>
 </html>

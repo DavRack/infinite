@@ -163,12 +163,7 @@ public class product {
         //    return null;
         //}
         return busqueda_actual;
-    }
-    
-    public static void fill_busqueda_actual(String objetive_name){
-        busqueda_actual=search_name(objetive_name);
-    }
-    
+    }    
 
     public static LinkedList search_category(String objetive_category) {
         /*busca el productos por la categor�a dada, retorna una lista de productos que coincidan con la categor�a,
