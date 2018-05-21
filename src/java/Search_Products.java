@@ -34,6 +34,8 @@ public class Search_Products extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             String a = request.getParameter("search");
+            models.product.fill_busqueda_actual(a);
+            
             response.sendRedirect("Search.jsp");
             
             

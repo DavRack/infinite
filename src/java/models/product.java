@@ -13,6 +13,7 @@ public class product {
     private int solds;
     private LinkedList comment_list;
     private static LinkedList<product> products = new LinkedList<>();
+    public static LinkedList<product> busqueda_actual = new LinkedList<>();
 
     public String get_name() {
         return name;
@@ -146,7 +147,7 @@ public class product {
         Iterator iter = products.iterator();
         while (iter.hasNext()) {
             product pro = (product) iter.next();
-            if (pro.get_name().equals(objetive_name)) {
+            if (pro.get_name().contains(objetive_name)) {
                 product_list.add(pro);
             }
         }
@@ -156,6 +157,11 @@ public class product {
             return null;
         }
     }
+    
+    public static void fill_busqueda_actual(String objetive_name){
+        busqueda_actual=search_name(objetive_name);
+    }
+    
 
     public static LinkedList search_category(String objetive_category) {
         /*busca el productos por la categor�a dada, retorna una lista de productos que coincidan con la categor�a,

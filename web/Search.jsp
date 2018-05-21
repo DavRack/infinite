@@ -13,7 +13,21 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <br>
-        <h1>hello there :3</h1>
+        <div class="container">
+        <%int l=models.product.busqueda_actual.size();%>
+        <%for (int i=0;i<l;i++){
+            models.product producto = models.product.busqueda_actual.get(i);
+        %>
+        
+        <div class="jumbotron">
+            <h2>Nombre: <%out.println(producto.get_name());%></h2>
+            <h2>Precio: <%out.println(producto.get_price());%></h2>
+            <h2>Descripcion: </h2>
+            <h4><%out.println(producto.get_description());%></h4>
+                
+            </h1>
+        </div>
+        <%}%>
+        </div>
     </body>
 </html>
