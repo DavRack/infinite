@@ -33,11 +33,9 @@ public class Search_Products extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String a = request.getParameter("id");
+            String a = request.getParameter("search");
             out.println(a);
-            if(request.getParameter("name").equals("categories")){
-                out.print("ok");
-            }
+            
             
         }
     }

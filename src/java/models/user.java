@@ -6,11 +6,11 @@ public class user {
 
     private static user active_user;
     //lista donde se almacenan todos los usuarios (de todos los tipos)
-    static HashMap<String, user> all_users = new HashMap<>();
+    public static HashMap<String, user> all_users = new HashMap<>();
     //lista donde se almacenan los usuarios de tipo usuario
-    static HashMap<String, user> users = new HashMap<>();
+    public static HashMap<String, user> users = new HashMap<>();
     //lista con todos los usuarios falsos
-    static HashMap<String, user> fake_users = new HashMap<>();
+    public static HashMap<String, user> fake_users = new HashMap<>();
 
     //nombre del archivo donde est� la base de datos
     
