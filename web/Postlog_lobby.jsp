@@ -8,7 +8,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <br>
+        <br><br><br>
         <div class="container">
             <h1>
                 Bienvenido, <%out.println(models.user.get_active_user().get_nikname());%><br>
