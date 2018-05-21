@@ -32,6 +32,7 @@
                 <h2>Precio: <%out.println(producto.get_price());%></h2>
                 <h2>Descripcion: </h2>
                 <h4><%out.println(producto.get_description());%></h4>
+                <a class="btn btn-secondary" href="#" id="titulo" role="button">Ver más</a>
             </div>
             <%}
             } else {%>
