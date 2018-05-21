@@ -25,12 +25,27 @@
                                 Descripcion: </h2><h4><p><%out.println(producto.get_description());%></p></h4>
                         </div>
                     </div>
-                    <div class="col-md-6"> 
+                    <div class="col-md-6">
                         <div class="jumbotron">
                             <h2>Comentarios</h2>
                         </div>
+                        <%java.util.LinkedList comentarios = producto.get_comment_list();%>
+                        <%int L = comentarios.size();
+                            if (L > 0) {%>
+                        <%for (int i = 0; i < L; i++) {
+                        models.comment comentario = (models.comment) comentarios.get(i);%>
                         <div class="jumbotron">
-                            <h3>ea</h3>
+                            <p><h3>"<%out.println(comentario.get_description());%>"</h3></p>
+                            
+                            <h3>Fecha: </h3>
+                            <h2>Autor: </h2>
+                            
+                        </div>
+
+                        <%}
+                            }%>
+                        <div class="jumbotron">
+                            <h3>Credo del programador</h3>
                             <p>Éste es mi codigo, hay muchos como el pero este es mio, mi codigo es mi mejor amigo, es mi vida. Debo dominarlo 
                                 como debo dominar mi vida. sin mi, mi codigo es inservible; sin mi codigo yo soy inservible. debo programar correctamente 
                                 mi codigo, debo codificar antes que ataquen los bugs que tratan de destruirme.
