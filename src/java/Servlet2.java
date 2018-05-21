@@ -41,7 +41,15 @@ public class Servlet2 extends HttpServlet {
             
             if (log_in == true) {
                 models.user.log_in_by_nikname(nickname);
-                response.sendRedirect("Postlog_lobby.jsp");
+                models.user usuario = models.user.get_active_user();
+                if (usuario instanceof models.seller){
+                    response.sendRedirect("Postlog_seller.jsp");
+                }else if(usuario instanceof models.admin){
+                    response.sendRedirect("Postlog_admin.jsp");
+                }else{
+                    response.sendRedirect("Postlog_lobby.jsp");
+                }
+                
             } else {
                 response.sendRedirect("login.jsp");
                 
