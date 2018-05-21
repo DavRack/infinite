@@ -29,7 +29,7 @@
             Mi perfil:
             <br><br>
             <a class="btn btn-secondary" href="Profile.jsp" role="button">Ver mi perfil</a>
-            <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver mi Biblioteca</a>
+            <a class="btn btn-secondary" href="Library.jsp" role="button">Ver mi Biblioteca</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Agregar más dinero a la cuenta</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Agregar un amigo</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver el Usuario Más Activo</a>

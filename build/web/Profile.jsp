@@ -22,7 +22,7 @@
             Fecha de Nacimiento: <%out.println(usuario.get_birth_date());%><br><br>
             País de origen: <%out.println(usuario.get_nationality());%><br><br>
             Cantidad de dinero que posee actualmente: <%out.println(usuario.get_money());%><br><br><br><br>
-            <a class="btn btn-secondary" href="#" role="button">Ver mi biblioteca</a>
+            <a class="btn btn-secondary" href="Library.jsp" role="button">Ver mi biblioteca</a>
             <a class="btn btn-secondary" href="#" role="button">Ver mi lista de deseados</a>
             <a class="btn btn-secondary" href="#" role="button">Ver mi lista de amigos</a>
             </h5>

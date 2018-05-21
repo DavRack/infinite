@@ -137,6 +137,10 @@ public class user {
     public void set_friendslist(LinkedList friends) {
         this.friends = friends;
     }
+    
+    public void set_product_list(LinkedList products) {
+        this.product_list = products;
+    }
 
     public void set_wishlist(LinkedList wishlist) {
         this.wishlist = wishlist;
@@ -181,7 +185,7 @@ public class user {
         LinkedList<product> bill_list = new LinkedList<>();
         LinkedList<product> product_list = new LinkedList<>();
         this.set_name(name);
-
+        this.set_product_list(product_list);
         this.set_nikname(nikname);
         this.set_email(email);
         this.set_birth_date(birth_date);
