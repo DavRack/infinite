@@ -12,11 +12,17 @@ public class product {
     private String category;
     private int solds;
     private LinkedList comment_list;
+    
+    public static product active_product;
     private static LinkedList<product> products = new LinkedList<>();
     public static LinkedList<product> busqueda_actual = new LinkedList<>();
 
     public String get_name() {
         return name;
+    }
+    
+    public static product get_active_product(){
+        return product.active_product;
     }
 
     public void set_name(String name) {
