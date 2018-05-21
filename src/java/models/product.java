@@ -95,7 +95,7 @@ public class product {
     public product(String name, String descripcion, seller seller, double price, String category) {
         LinkedList<String> comment_list = new LinkedList<String>();
         this.set_name(name);
-        this.set_description(description);
+        this.set_description(descripcion);
         this.set_seller(seller);
         this.set_price(price);
         this.set_category(category);

@@ -20,7 +20,7 @@
                 <h2>Nombre: <%out.println(producto.get_name());%></h2>
                 <h2>Precio: <%out.println(producto.get_price());%></h2>
                 <h2>Descripcion: </h2>
-                <h4><%out.println(producto.get_description());%></h4>
+                <h4><%out.println((String)producto.get_description());%></h4>
             </div>
             <%}}else{%>
             <div class="jumbotron">
