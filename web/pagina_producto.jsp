@@ -22,7 +22,7 @@
                         <div class="jumbotron">
                             <h2>Categoria:</h2><h3> <%out.println(producto.get_category());%></h3><br><br>
                             <h2>Descripcion: </h2><h4><p><%out.println(producto.get_description());%></p></h4><br>
-                            <h2>Vendedor: </h2><h3><%out.println(producto.get_seller());%></h3>
+                            <h2>Vendedor: </h2><h3><%out.println(producto.get_seller().get_name());%></h3>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -37,8 +37,8 @@
                         <div class="jumbotron">
                             <p><h3>"<%out.println(comentario.get_description());%>"</h3></p>
                             
-                            <h3>Fecha: </h3>
-                            <h2>Autor: </h2>
+                            <h4>Fecha: <%out.println(comentario.get_date());%></h4>
+                            <h4>Autor: <%out.println(comentario.get_author().get_name());%></h4>
                             
                         </div>
 
