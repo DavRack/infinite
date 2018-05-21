@@ -38,11 +38,11 @@
                     <button type="submit" class="btn btn-primary">Agregar</button>
                 </div>
             </form>
-            
+
             <a class="btn btn-secondary" href="mas_activo.jsp" role="button">Ver el Usuario Más Activo</a>
 
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo">Agregar dinero</button>
-            <form action='add_money'method='post'>
+            <form action='add_money' method='post'>
                 <div id="demo" class="collapse"><br>
                     <input type="text" name="money" class="form-control" placeholder="Introduzca dinero" required>
                     <br>
@@ -53,9 +53,8 @@
             ¿Guargar datos?<br><br>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">¿Guargar datos?</a><br><br><br>
             <form action='Servlet2' method='post'>
-                <form>
-                    <a class="btn btn-secondary" href="log_out" role="button">Cerrar Sesión</a><br><br><br>
-                </form>
+                <a class="btn btn-secondary" href="log_out" role="button">Cerrar Sesión</a><br><br><br>
+            </form>
         </div>
     </body>
 </html>
