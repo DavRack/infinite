@@ -339,4 +339,12 @@ public class user {
         
         return nickname;
     }
+    
+    public void add_money(double money){
+        double mon = this.get_money()+money;
+        
+        this.set_money(mon);
+       
+        
+    }
 }
