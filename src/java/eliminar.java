@@ -30,11 +30,12 @@ public class eliminar extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String product = request.getParameter("name");
+        String product = request.getParameter("juego");
         Iterator iter = models.product.get_products().iterator();
         while (iter.hasNext()) {
             models.product pro = (models.product) iter.next();
             if (pro.get_name().equals(product)) {
+                models.product.get_products().remove(pro);
                 if (models.user.get_active_user() instanceof models.seller) {
                     response.sendRedirect("Postlog_seller.jsp");
                 } else {

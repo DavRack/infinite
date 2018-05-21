@@ -29,25 +29,57 @@
             <br><br>
             Editar:
             <br><br>
-            <a class="btn btn-secondary" href="#" id="titulo" role="button">Titulo</a>
-            <a class="btn btn-secondary" href="#" id="precio" role="button">Precio</a>
-            <a class="btn btn-secondary" href="#" id="descipcion" role="button">Descripción</a>
-           
+
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo3">Titulo</button>
+            <form action='eliminar' method='post'>
+                <div id="demo3" class="collapse"><br>
+                    <input type="text" name="nombre" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
+                    <input type="text" name="change_nombre" class="form-control" placeholder="Introduzca el nuevo nombre del producto" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </div>
+            </form>
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo4">Precio</button>
+            <form action='eliminar' method='post'>
+                <div id="demo4" class="collapse"><br>
+                    <input type="text" name="precio" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
+                    <input type="text" name="change_precio" class="form-control" placeholder="Introduzca el nuevo precio" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </div>
+            </form>
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo5">Descripción</button>
+            <form action='eliminar' method='post'>
+                <div id="demo5" class="collapse"><br>
+                    <input type="text" name="descripcion" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
+                    <input type="text" name="change_descripcion" class="form-control" placeholder="Introduzca la nueva descripción" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </div>
+            </form>
+
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo2">Eliminar</button>
             <form action='eliminar' method='post'>
                 <div id="demo2" class="collapse"><br>
-                    <input type="text" name="name" class="form-control" placeholder="Introduzca el nombre del juego" required>
+                    <input type="text" name="juego" class="form-control" placeholder="Introduzca el nombre del producto" required>
                     <br>
                     <button type="submit" class="btn btn-primary">Eliminar</button>
                 </div>
             </form>
             <br><br>
-            
+
             Comentarios:
             <br><br>
             <a class="btn btn-secondary" href="#" id="ver_comentario" role="button">Ver comentarios</a>
             <a class="btn btn-secondary" href="#" id="eliminar_comentario" role="button">Eliminar comentario </a>
-            
+            <br><br>
+            Usuarios:
+            <br><br>
+            <a class="btn btn-secondary" href="#" id="banear_usuario" role="button">Banear usuario</a>
+            <a class="btn btn-secondary" href="#" id="desbanear_usuario" role="button">Desbanear usuario</a>
+            <br><br>
         </div>
     </body>
 </html>
+
+<%@ include file="footer.jsp" %>
