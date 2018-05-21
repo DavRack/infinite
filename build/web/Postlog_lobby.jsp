@@ -23,7 +23,7 @@
             Buscar un juego:
             <br><br>
             <a class="btn btn-secondary" href="Categories.jsp" id="categories" role="button">Ver Categorias</a>
-            <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver Catálogo Completo</a>
+            <a class="btn btn-secondary" href="catalogo.jsp" role="button">Ver Catálogo Completo</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver Producto más Vendido</a>
             <br><br><br>
             Mi perfil:
@@ -36,7 +36,7 @@
             <br><br><br>
             ¿Guargar datos?<br><br>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">¿Guargar datos?</a><br><br><br>
-            <form action='Servlet2'method='post'>
+            <form action='Servlet2' method='post'>
                 <form>
                     <a class="btn btn-secondary" href="log_out" role="button">Cerrar Sesión</a><br><br><br>
                 </form>
