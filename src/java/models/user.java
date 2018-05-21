@@ -347,4 +347,16 @@ public class user {
        
         
     }
+    
+    public static String go_home(){
+        
+        if (models.user.get_active_user() instanceof admin){
+            return "Postlog_admin";
+        }else if (models.user.get_active_user() instanceof seller){
+            return "Postlog_seller";
+        }else{
+            return "Postlog_lobby";
+        }
+         
+    }
 }

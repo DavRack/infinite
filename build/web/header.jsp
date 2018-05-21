@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="navbar-brand " href=<%if(models.user.get_active_user()== null){out.println("login.jsp");}else{out.println("Postlog_lobby.jsp");}%>><%if(models.user.get_active_user()== null){out.println("Log in");}else{out.println("Home");}%></a>
+                        <a class="navbar-brand " href=<%if(models.user.get_active_user()== null){out.println("login.jsp");}else{models.user.go_home();}%>><%if(models.user.get_active_user()== null){out.println("Log in");}else{out.println("Home");}%></a>
                     </li>
                     <li class="nav-item">
                         <a class="navbar-brand " href=<%if(models.user.get_active_user()== null){out.println("sign_in.jsp");}else{out.println("log_out");}%>><%if(models.user.get_active_user()== null){out.println("Sign In");}else{out.println("Log Out");}%></a>
