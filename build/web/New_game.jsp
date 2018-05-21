@@ -42,7 +42,7 @@
                     <option value="Simuladores">Simuladores</option>
                     <option value="Terror">Terror</option>
                 </select><br><br>
-                <div cclass="form-group">
+                <div class="form-group">
                     <label for="validationCustom03">Descripción</label>
                     <input type="text" class="form-control"   name="descripcion" placeholder="Descripción del producto" required>
                     <div class="valid-feedback">

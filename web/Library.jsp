@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="container"><br><br>
-            <h1>Sus productos son...</h1><br><br>
+            <h1 class='display-2'>Sus productos son</h1><br><br>
             <%
                 LinkedList lista = models.user.get_active_user().get_product_list();
                 Iterator iter = lista.iterator();
