@@ -24,6 +24,9 @@ public class product {
     public static product get_active_product(){
         return product.active_product;
     }
+    public static void set_active_product(product producto){
+        active_product=producto;
+    }
 
     public void set_name(String name) {
         this.name = name;

@@ -28,11 +28,13 @@
             %>
 
             <div class="jumbotron">
+                <form action="ver_producto" method="post">
                 <h2>Nombre: <%out.println(producto.get_name());%></h2>
                 <h2>Precio: <%out.println(producto.get_price());%></h2>
                 <h2>Descripcion: </h2>
                 <h4><%out.println(producto.get_description());%></h4>
-                <a class="btn btn-secondary" href="#" id="titulo" role="button">Ver más</a>
+                <a class="btn btn-secondary" type="sumit" href="ver_producto" id="titulo" role="button">Ver más</a>
+                </form>
             </div>
             <%}
             } else {%>
