@@ -8,7 +8,7 @@ public class product {
     private String name;
     private String description;
     private int product_id;
-    private int price;
+    private double price;
     private String category;
     private int solds;
     private LinkedList comment_list;
@@ -45,11 +45,11 @@ public class product {
         this.product_id = product_id;
     }
 
-    public int get_price() {
+    public double get_price() {
         return price;
     }
 
-    public void set_price(int price) {
+    public void set_price(double price) {
         this.price = price;
     }
 
@@ -92,7 +92,7 @@ public class product {
     }
 
 
-    public product(String name, String descripcion, seller seller, int price, String category) {
+    public product(String name, String descripcion, seller seller, double price, String category) {
         LinkedList<String> comment_list = new LinkedList<String>();
         this.set_name(name);
         this.set_description(description);
@@ -148,13 +148,13 @@ public class product {
     public static LinkedList search_name(String objetive_name) {
         /*busca el productos por el nombre dado,retorna una lista de productos que coincidan con el nombre,
         en caso de no encontrar ningun archivo retorna null(hay que mirar si eso se puede dejar as� o como se arregla eso)*/
-        LinkedList<product> product_list = new LinkedList<>();
+        busqueda_actual.clear();
         int c = 0;
         Iterator iter = products.iterator();
         while (iter.hasNext()) {
             product pro = (product) iter.next();
             if (pro.get_name().contains(objetive_name)) {
-                product_list.add(pro);
+                busqueda_actual.add(pro);
             }
         }
         //if (product_list.size() != 0) {
@@ -162,7 +162,7 @@ public class product {
         //} else {
         //    return null;
         //}
-        return product_list;
+        return busqueda_actual;
     }
     
     public static void fill_busqueda_actual(String objetive_name){
@@ -173,18 +173,18 @@ public class product {
     public static LinkedList search_category(String objetive_category) {
         /*busca el productos por la categor�a dada, retorna una lista de productos que coincidan con la categor�a,
         en caso de no encontrar ningun archivo retorna null(hay que mirar si eso se puede dejar as� o como se arregla eso)*/
-        LinkedList<product> product_list = new LinkedList<>();
+        busqueda_actual.clear();
         Iterator iter = products.iterator();
         while (iter.hasNext()) {
             product pro = (product) iter.next();
             if(pro.get_category().equals(objetive_category)){
-                product_list.add(pro);
+                busqueda_actual.add(pro);
             }
         }
-        if (product_list.size() != 0) {
-            return product_list;
+        if (busqueda_actual.size() != 0) {
+            return busqueda_actual;
         } else {
-            return null;
+            return busqueda_actual;
         }
         
     }

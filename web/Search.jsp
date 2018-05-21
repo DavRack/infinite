@@ -27,8 +27,6 @@
                 <h2>Precio: <%out.println(producto.get_price());%></h2>
                 <h2>Descripcion: </h2>
                 <h4><%out.println(producto.get_description());%></h4>
-
-                </h1>
             </div>
             <%}}else{%>
             <div class="jumbotron">
