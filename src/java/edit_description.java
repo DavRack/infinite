@@ -29,6 +29,7 @@ public class edit_description extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         String product = request.getParameter("product");
         String cambio = request.getParameter("change_descripcion");
         Iterator iter = models.product.get_products().iterator();
@@ -36,11 +37,6 @@ public class edit_description extends HttpServlet {
             models.product pro = (models.product) iter.next();
             if (pro.get_name().equals(product)) {
                 pro.set_description(cambio);
-                if (models.user.get_active_user() instanceof models.seller) {
-                    response.sendRedirect("Postlog_seller.jsp");
-                } else {
-                    response.sendRedirect("Postlog_admin.jsp");
-                }
             }
         }
 

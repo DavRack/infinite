@@ -36,11 +36,6 @@ public class edit_title extends HttpServlet {
             models.product pro = (models.product) iter.next();
             if (pro.get_name().equals(product)) {
                 pro.set_name(cambio);
-                if (models.user.get_active_user() instanceof models.seller) {
-                    response.sendRedirect("Postlog_seller.jsp");
-                } else {
-                    response.sendRedirect("Postlog_admin.jsp");
-                }
             }
         }
 
