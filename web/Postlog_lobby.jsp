@@ -30,7 +30,15 @@
             <br><br>
             <a class="btn btn-secondary" href="Profile.jsp" role="button">Ver mi perfil</a>
 
-            <a class="btn btn-secondary" href="Servlet_Users" role="button">Agregar un amigo</a>
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo1">Agregar amigo</button>
+            <form action='add_friend' method='post'>
+                <div id="demo1" class="collapse"><br>
+                    <input type="text" name="nickname" class="form-control" placeholder="persona a agregar" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </div>
+            </form>
+            
             <a class="btn btn-secondary" href="mas_activo.jsp" role="button">Ver el Usuario Más Activo</a>
 
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo">Agregar dinero</button>
