@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ include file="header.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <br>
         <h1>hello there :3</h1>
     </body>
 </html>
