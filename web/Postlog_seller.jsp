@@ -29,12 +29,12 @@
             Producto:
             <br><br>
             <a class="btn btn-secondary" href="New_game.jsp" id="categories" role="button">Poner a la venta un producto nuevo</a>
-            <a class="btn btn-secondary" href="#" id="categories" role="button">Eliminar un producto</a>
+            <a class="btn btn-secondary" href="#" id="remove" role="button">Eliminar un producto</a>
             <br><br>
             
             Editar:
             <br><br>
-            <a class="btn btn-secondary" href="#" id="titulo" role="button">Titulo</a>
+            <a class="btn btn-secondary" href="Change_product.jsp" id="titulo" role="button">Titulo</a>
             <a class="btn btn-secondary" href="#" id="precio" role="button">Precio</a>
             <a class="btn btn-secondary" href="#" id="descipcion" role="button">Descripción</a>
             <br><br>

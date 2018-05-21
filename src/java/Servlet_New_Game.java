@@ -36,7 +36,8 @@ public class Servlet_New_Game extends HttpServlet {
             double precio = Double.parseDouble(request.getParameter("precio"));
             String category = request.getParameter("category");
             String descripcion = request.getParameter("descripcion");
-            models.product pro = new models.product(name, descripcion, (models.seller)models.user.get_active_user(), 0, category);
+            models.product pro = new models.product(name, descripcion, (models.seller)models.user.get_active_user(), precio, category);
+            response.sendRedirect("Postlog_seller.jsp");
         }
     }
 
