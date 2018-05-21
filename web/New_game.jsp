@@ -14,7 +14,7 @@
     <body><br><br>
         <div class="container">
             <h1>Crear un nuevo Producto</h1>
-            <form action='#' method='post'>
+            <form action='Servlet_New_Game' method='post'>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="validationCustom01">Nombre</label>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationCustom02">Precio</label>
-                        <input type="text" class="form-control" name="precio" placeholder="Precio" required>
+                        <input type="text" class="form-control" name="precio" placeholder="Ingrese el precio" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
