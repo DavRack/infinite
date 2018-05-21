@@ -8,6 +8,18 @@
         <servlet-name>eliminar</servlet-name>
         <servlet-class>eliminar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>edit_title</servlet-name>
+        <servlet-class>edit_title</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>edit_price</servlet-name>
+        <servlet-class>edit_price</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>edit_description</servlet-name>
+        <servlet-class>edit_description</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>catalogo</servlet-name>
         <url-pattern>/catalogo</url-pattern>
@@ -15,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>eliminar</servlet-name>
         <url-pattern>/eliminar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>edit_title</servlet-name>
+        <url-pattern>/edit_title</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>edit_price</servlet-name>
+        <url-pattern>/edit_price</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>edit_description</servlet-name>
+        <url-pattern>/edit_description</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

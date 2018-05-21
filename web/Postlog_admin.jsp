@@ -31,27 +31,27 @@
             <br><br>
 
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo3">Titulo</button>
-            <form action='eliminar' method='post'>
+            <form action='edit_title' method='post'>
                 <div id="demo3" class="collapse"><br>
-                    <input type="text" name="nombre" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
+                    <input type="text" name="product" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
                     <input type="text" name="change_nombre" class="form-control" placeholder="Introduzca el nuevo nombre del producto" required>
                     <br>
                     <button type="submit" class="btn btn-primary">Aceptar</button>
                 </div>
             </form>
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo4">Precio</button>
-            <form action='eliminar' method='post'>
+            <form action='edit_price' method='post'>
                 <div id="demo4" class="collapse"><br>
-                    <input type="text" name="precio" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
-                    <input type="text" name="change_precio" class="form-control" placeholder="Introduzca el nuevo precio" required>
+                    <input type="text" name="product" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
+                    <input type="number" name="change_precio" class="form-control" placeholder="Introduzca el nuevo precio" required>
                     <br>
                     <button type="submit" class="btn btn-primary">Aceptar</button>
                 </div>
             </form>
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo5">Descripción</button>
-            <form action='eliminar' method='post'>
+            <form action='edit_description' method='post'>
                 <div id="demo5" class="collapse"><br>
-                    <input type="text" name="descripcion" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
+                    <input type="text" name="product" class="form-control" placeholder="Introduzca el nombre del producto a cambiar" required>
                     <input type="text" name="change_descripcion" class="form-control" placeholder="Introduzca la nueva descripción" required>
                     <br>
                     <button type="submit" class="btn btn-primary">Aceptar</button>
