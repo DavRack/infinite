@@ -59,8 +59,7 @@ public class comment {
         this.set_date(date);
         this.set_assessment(assessment);
         this.set_description(description);
-        product.get_comment_list();
-        product.get_comment_list().put(product.get_comment_list().size(), this);
+        product.get_comment_list().add(this);
     }           
     
 }
