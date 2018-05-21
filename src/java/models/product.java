@@ -105,6 +105,7 @@ public class product {
         this.set_solds(0);
         this.set_comment_list(comment_list);
         products.add(this);
+        seller.append_to_product_list(this);
         //falta lo de la lista de el seller para agregar el producto a si mismo
     }
 

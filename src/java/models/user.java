@@ -148,7 +148,7 @@ public class user {
 
     
     public void append_to_product_list(product product_object){
-        this.get_active_user().get_product_list().add(product_object);
+        this.get_product_list().add(product_object);
     }
     
     public LinkedList get_product_list(){
