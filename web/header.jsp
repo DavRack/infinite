@@ -38,5 +38,3 @@
                 </form>
             </div>
         </nav>
-
-<%@ include file="footer.jsp" %>

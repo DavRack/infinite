@@ -44,5 +44,5 @@
     </body>
 </html>
 
-
+<%@ include file="footer.jsp" %>
 <%--Crear if que si lo que reciben es algo lo metan en un lado y si es otra cosa, en otro --%>
