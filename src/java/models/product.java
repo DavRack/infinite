@@ -11,7 +11,7 @@ public class product {
     private int price;
     private String category;
     private int solds;
-    private HashMap comment_list;
+    private LinkedList comment_list;
     private static LinkedList<product> products = new LinkedList<>();
 
     public String get_name() {
@@ -56,11 +56,11 @@ public class product {
     }
 
     //ni idea de si est� bien 
-    public HashMap get_comment_list() {
+    public LinkedList get_comment_list() {
         return comment_list;
     }
 
-    public void set_comment_list(HashMap comment_list) {
+    public void set_comment_list(LinkedList comment_list) {
         this.comment_list = comment_list;
     }
 
@@ -81,7 +81,7 @@ public class product {
     }
 
     public product(String name, String descripcion, seller seller, int price, String category) {
-        HashMap<Integer, String> comment_list = new HashMap<Integer, String>();
+        LinkedList<String> comment_list = new LinkedList<String>();
         this.set_name(name);
         this.set_description(description);
         this.set_seller(seller);
