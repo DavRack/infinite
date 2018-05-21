@@ -49,8 +49,8 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action='Search_Products' method="post">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar un producto" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" name='search' type="text">Buscar</button>
+                    <input class="form-control mr-sm-2" name='search'type="text" placeholder="Buscar un producto" aria-label="search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" name='search' type="submit">Buscar</button>
                 </form>
             </div>
         </nav>

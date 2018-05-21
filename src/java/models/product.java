@@ -151,11 +151,12 @@ public class product {
                 product_list.add(pro);
             }
         }
-        if (product_list.size() != 0) {
-            return product_list;
-        } else {
-            return null;
-        }
+        //if (product_list.size() != 0) {
+        //    return product_list;
+        //} else {
+        //    return null;
+        //}
+        return product_list;
     }
     
     public static void fill_busqueda_actual(String objetive_name){
