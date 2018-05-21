@@ -26,10 +26,10 @@
             </h5>
             <br><br>
             
-            Juegos:
+            Producto:
             <br><br>
-            <a class="btn btn-secondary" href="#" id="categories" role="button">Poner a la venta un juego</a>
-            <a class="btn btn-secondary" href="#" id="categories" role="button">Eliminar un juego</a>
+            <a class="btn btn-secondary" href="New_game.jsp" id="categories" role="button">Poner a la venta un producto nuevo</a>
+            <a class="btn btn-secondary" href="#" id="categories" role="button">Eliminar un producto</a>
             <br><br>
             
             Editar:
@@ -48,3 +48,4 @@
 
     </body>
 </html>
+<%@ include file="footer.jsp" %>
