@@ -54,7 +54,7 @@ public class comment {
     public void set_author(user author){
         this.author=author;
     }
-    comment(user author, String date, int assessment, String description, product product){
+    public comment(user author, String date, int assessment, String description, product product){
         this.set_author(author);
         this.set_date(date);
         this.set_assessment(assessment);

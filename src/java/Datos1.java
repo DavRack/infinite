@@ -42,6 +42,8 @@ public class Datos1 extends HttpServlet {
             models.user a = new models.user("a", "a" ,"a@mail.com","20/05/2018","Perú", "a", 100000);
             models.user x = new models.user("x", "x" ,"a@mail.com","20/05/2018","Perú", "x", 100000);
             models.user y = new models.user("y", "y" ,"a@mail.com","20/05/2018","Perú", "y", 100000);
+            models.comment arobol = new models.comment(a,"21/05/2018",10,"muy buen juego", cuphead);
+            models.comment xa = new models.comment(x, "17/04/1999", 5, "nada mal", cuphead);
             response.sendRedirect("index.jsp");
         }
     }
