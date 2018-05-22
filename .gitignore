@@ -1,2 +1,5 @@
 /dist/
 nbproject/private/private.properties
+build/web/WEB-INF/classes/models/News.class
+build/web/WEB-INF/classes/models/News.class
+src/java/models/News.java
