@@ -16,14 +16,34 @@
         models.News.add_news();
         LinkedList lista = models.News.get_news();
         models.News noticia1 = (models.News) lista.pollFirst();
-        String titular1 = noticia1.get_titular();
-        String body1 = noticia1.get_body();
         models.News noticia2 = (models.News) lista.pollFirst();
-        String titular2 = noticia2.get_titular();
-        String body2 = noticia2.get_body();
         models.News noticia3 = (models.News) lista.pollFirst();
-        String titular3 = noticia3.get_titular();
-        String body3 = noticia3.get_body();
+        String titular1="";
+        String titular2="";
+        String titular3="";
+        String body1="";
+        String body2="";
+        String body3="";
+        if(noticia1!=null && noticia2 !=null && noticia3!=null){
+            titular1 = noticia1.get_titular();
+            body1 = noticia1.get_body();
+        
+            titular2 = noticia2.get_titular();
+            body2 = noticia2.get_body();
+        
+            titular3 = noticia3.get_titular();
+            body3 = noticia3.get_body();
+        }else{
+            titular1 = "Nada Nuevo por ahora";
+            body1 = "Por ahora no hay novedades para mostrar";
+        
+            titular2 = "Nada Nuevo por ahora";
+            body2 = "Por ahora no hay novedades para mostrar";
+        
+            titular3 = "Nada Nuevo por ahora";
+            body3 = "Por ahora no hay novedades para mostrar";
+        }
+        
         lista.addFirst(noticia1);
         lista.addFirst(noticia2);
         lista.addFirst(noticia3);
