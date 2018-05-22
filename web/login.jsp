@@ -7,6 +7,7 @@
     <body>
         <div class="container">
             <br> <br>
+            <%out.println(models.user.users.size());%>
             <h1 class="display-3">Ingresa tus datos</h1><br>
             <form action='Servlet2'method='post'>
                 <form>
