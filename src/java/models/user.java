@@ -4,7 +4,7 @@ import java.util.*;
 
 public class user {
 
-    private static user active_user;
+    private static user active_user = null;
     //lista donde se almacenan todos los usuarios (de todos los tipos)
     public static HashMap<String, user> all_users = new HashMap<>();
     //lista donde se almacenan los usuarios de tipo usuario
