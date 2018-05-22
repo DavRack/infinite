@@ -16,12 +16,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author pavilion
  */
-@WebServlet(urlPatterns = {"/Servlet2"})
-public class Servlet2 extends HttpServlet {
+@WebServlet(urlPatterns = {"/Ban"})
+public class Ban extends HttpServlet {
 
     /**
-     * log in
-     * 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
@@ -34,27 +32,9 @@ public class Servlet2 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            String nickname = request.getParameter("nickname");
-            String password = request.getParameter("password");
-            boolean log_in = models.user.log_in_test(nickname, password);
-            
-            if (log_in == true && models.user.all_users.get(nickname).get_ban()==false) {
-                models.user.log_in_by_nikname(nickname);
-                models.user usuario = models.user.get_active_user();
-                if (usuario instanceof models.seller){
-                    response.sendRedirect("Postlog_seller.jsp");
-                }else if(usuario instanceof models.admin){
-                    response.sendRedirect("Postlog_admin.jsp");
-                }else{
-                    response.sendRedirect("Postlog_lobby.jsp");
-                }
-                
-            } else {
-                response.sendRedirect("login.jsp");
-                
-                
-            }
+            String nickname = request.getParameter("usuario");
+            models.user.all_users.get(nickname).set_ban(true);
+            response.sendRedirect("Postlog_admin.jsp");
         }
     }
 

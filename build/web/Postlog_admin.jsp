@@ -70,13 +70,56 @@
 
             Comentarios:
             <br><br>
-            <a class="btn btn-secondary" href="#" id="ver_comentario" role="button">Ver comentarios</a>
+            
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo6">Ver comentarios de un producto</button>
+            <form action='Search.jsp' method='post'>
+                <div id="demo6" class="collapse"><br>
+                    <input type="text" name="juego" class="form-control" placeholder="Introduzca el nombre del producto del cual quiere ver los comentarios" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </form>
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <a class="btn btn-secondary" href="#" id="eliminar_comentario" role="button">Eliminar comentario </a>
             <br><br>
             Usuarios:
             <br><br>
-            <a class="btn btn-secondary" href="#" id="banear_usuario" role="button">Banear usuario</a>
-            <a class="btn btn-secondary" href="#" id="desbanear_usuario" role="button">Desbanear usuario</a>
+            
+            
+            
+            
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo7">Banear usuario</button>
+            <form action='Ban' method='post'>
+                <div id="demo7" class="collapse"><br>
+                    <input type="text" name="usuario" class="form-control" placeholder="Introduzca el nickname del usuario a bannear" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Bannear</button>
+                </div>
+            </form>
+            
+            
+            
+            
+            
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo8">Desbanear usuario</button>
+            <form action='UnBan' method='post'>
+                <div id="demo8" class="collapse"><br>
+                    <input type="text" name="usuario" class="form-control" placeholder="Introduzca el nickname del usuario a bannear" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Bannear</button>
+                </div>
+            </form>
+            
+            
+            
             <br><br>
         </div>
     </body>
