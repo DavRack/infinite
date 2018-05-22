@@ -13,7 +13,7 @@
 
 
     <%
-        models.News.add_news();
+        
         LinkedList lista = models.News.get_news();
         models.News noticia1 = (models.News) lista.pollFirst();
         models.News noticia2 = (models.News) lista.pollFirst();
@@ -24,22 +24,22 @@
         String body1="";
         String body2="";
         String body3="";
-        if(noticia1!=null && noticia2 !=null && noticia3!=null){
+        if(noticia1!=null ){
             titular1 = noticia1.get_titular();
             body1 = noticia1.get_body();
-        
-            titular2 = noticia2.get_titular();
-            body2 = noticia2.get_body();
-        
-            titular3 = noticia3.get_titular();
-            body3 = noticia3.get_body();
         }else{
             titular1 = "Nada Nuevo por ahora";
             body1 = "Por ahora no hay novedades para mostrar";
-        
+        }if(noticia2!=null){
+            titular2 = noticia2.get_titular();
+            body2 = noticia2.get_body();
+        }else{
             titular2 = "Nada Nuevo por ahora";
             body2 = "Por ahora no hay novedades para mostrar";
-        
+        }if(noticia3!=null){
+            titular3 = noticia3.get_titular();
+            body3 = noticia3.get_body();
+        }else{
             titular3 = "Nada Nuevo por ahora";
             body3 = "Por ahora no hay novedades para mostrar";
         }
