@@ -1,4 +1,5 @@
     <footer class="container">
+        <br><br><hr>
       <p>&copy; Infinite 2018</p>
     </footer>
 

@@ -55,7 +55,7 @@
             ¿Guargar datos?<br><br>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">¿Guargar datos?</a><br><br><br>
             <form action='Servlet2' method='post'>
-                <a class="btn btn-secondary" href="log_out" role="button">Cerrar Sesión</a><br><br><br>
+                <a class="btn btn-secondary" href="log_out" role="button">Cerrar Sesión</a><br>
             </form>
         </div>
     </body>
