@@ -19,23 +19,24 @@ public class txt {
     public static void read_txt() {
         //solo se pueden leer los archivos que estan en 
         // 
-
-        String filePath = "test.txt";
-        File inFile = new File("c:/users/david/desktop/datos.txt");
-
-        String fname = filePath;
-        String line = null;
+        String fname = "datos.txt";
+        String line;
         try {
-            FileReader fileReader = new FileReader(fname);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            while ((line = bufferedReader.readLine()) != null) {
-                lineas.add(line);
+            FileReader archivo = new FileReader("C:\\Users\\pavilion\\Desktop\\datos.txt");
+
+            if (archivo.ready()) {
+                BufferedReader Reader = new BufferedReader(archivo);
+                while ((line = Reader.readLine()) != null) {
+                    lineas.add(line);
+                }
+                Reader.close();
+            } else {
+                System.out.println("El archivo no existe");
             }
-            bufferedReader.close();
+
         } catch (IOException ex) {
             System.out.println("Error reading file named '" + fname + "'");
         }
-
     }
 
     public static void cargar_datos() {
@@ -43,13 +44,14 @@ public class txt {
         int l = lineas.size();
         for (int i = 0; i < l; i++) {
             String[] separados = lineas.get(i).split(";");
-            switch (separados[0]) {
-                case "user":
-                    models.user u = new models.admin(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
-                case "admin":
-                    models.admin a = new models.admin(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
-                case "seller":
-                    models.admin c = new models.admin(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
+            String rol = separados[0];
+
+            if (rol.equals("user")) {
+                new models.user(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
+            } else if (rol.equals("admin")) {
+                new models.admin(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
+            }else if(rol.equals("seller")){
+                new models.seller(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
             }
         }
 
