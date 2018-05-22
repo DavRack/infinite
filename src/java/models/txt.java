@@ -17,9 +17,11 @@ public class txt {
     public static LinkedList<String> lineas = new LinkedList<>();
 
     public static void read_txt() {
-        System.out.println(System.getProperty("user.dir"));
-        String filePath = "C:/datos";
-       
+        //solo se pueden leer los archivos que estan en 
+        // 
+
+        String filePath = "test.txt";
+        File inFile = new File("c:/users/david/desktop/datos.txt");
 
         String fname = filePath;
         String line = null;
