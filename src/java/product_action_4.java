@@ -6,6 +6,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Iterator;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class product_action_3 extends HttpServlet {
+public class product_action_4 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,7 +31,14 @@ public class product_action_3 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            models.user.get_active_user().get_bill_list().add(models.product.get_active_product());
+            Iterator iter = models.user.get_active_user().get_bill_list().iterator();
+            int c = 0;
+            while (iter.hasNext()) {
+                if (iter.next().equals(models.product.get_active_product())) {
+                    models.user.get_active_user().get_bill_list().remove(c);
+                }
+                c++;
+            }
             response.sendRedirect("pagina_producto.jsp");
         }
     }

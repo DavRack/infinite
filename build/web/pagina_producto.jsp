@@ -48,10 +48,13 @@
                             <button class="btn btn-secondary" name="accion" type="submit" value="agregar">Agragar a la lista de deseados</button>
                         </form>
                         <form action='product_action_2' method="post">
-                            <button class="btn btn-secondary" name="accion2" type="submit" value="eliminar">Eliminar de la lista de deseados</button>
+                            <button class="btn btn-secondary" name="accion2" type="submit" value="eliminar_deseados">Eliminar de la lista de deseados</button>
                         </form>
                         <form action='product_action_3' method="post">
                             <button class="btn btn-secondary" name="accion3" type="submit" value="carrito">Agregar al carrito</button>
+                        </form>
+                        <form action='product_action_4' method="post">
+                            <button class="btn btn-secondary" name="accion4" type="submit" value="eliminar_carrito">Eliminar del carrito</button>
                         </form>
 
                     </div>
