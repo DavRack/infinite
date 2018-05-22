@@ -33,15 +33,13 @@ public class ver_producto extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ver_producto</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ver_producto at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            String producto = request.getParameter("producto");
+            models.product.set_active_by_name(producto);
+            response.sendRedirect("pagina_producto.jsp");
+
+            
+            
+
         }
     }
 

@@ -27,6 +27,18 @@ public class product {
     public static void set_active_product(product producto){
         active_product=producto;
     }
+    public static void set_active_by_name(String producto){
+        int l=products.size();
+        for (int i=0;i<l;i++){
+            String comp=products.get(i).get_name();
+            if(products.get(i).get_name().equals(producto)){
+                active_product=products.get(i);
+                break;
+                
+            }
+        }
+        
+    }
 
     public void set_name(String name) {
         this.name = name;
