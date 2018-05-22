@@ -45,7 +45,7 @@
                         </li>
                     </form>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Generar Datos desde un txt</a>
+                        <a class="nav-link disabled" href="datos_txt">Generar Datos desde un txt</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action='Search_Products' method="post">
