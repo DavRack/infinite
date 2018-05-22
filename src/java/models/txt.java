@@ -20,6 +20,7 @@ public class txt {
         //solo se pueden leer los archivos que estan en 
         
         String fname = "datos.txt";
+        
         String line;
         try {
             FileReader archivo = new FileReader("C:\\Users\\David\\Documents\\GitHub\\infinite\\datos.txt");
