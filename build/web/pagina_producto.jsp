@@ -47,18 +47,26 @@
                     </div>
                 </div>
 
-                <div class="btn-group">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <form action='product_action' method="post" >
-                        <button class="btn btn-info" name="accion" type="submit" >Agragar a la lista de deseados</button>
+                        <label class="btn btn-lin">
+                            <button class="btn btn-info" name="accion" type="submit" >Agragar a la lista de deseados</button>
+                        </label>
                     </form>
                     <form action='product_action_2' method="post">
-                        <button class="btn btn-info" name="accion2" type="submit" >Eliminar de la lista de deseados</button>
+                        <label class="btn btn-lin">
+                            <button class="btn btn-info" name="accion2" type="submit" >Eliminar de la lista de deseados</button>
+                        </label>
                     </form>
                     <form action='product_action_3' method="post">
-                        <button class="btn btn-info" name="accion3" type="submit" >Agregar al carrito</button>
+                        <label class="btn btn-lin">
+                            <button class="btn btn-info" name="accion3" type="submit" >Agregar al carrito</button>
+                        </label>
                     </form>
                     <form action='product_action_4' method="post">
-                        <button class="btn btn-info" name="accion4" type="submit" >Eliminar del carrito</button>
+                        <label class="btn btn-link">
+                            <button class="btn btn-info" name="accion4" type="submit" >Eliminar del carrito</button>
+                        </label>
                     </form>
                 </div>
             </div>
