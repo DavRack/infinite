@@ -71,9 +71,15 @@
                             <button class="btn btn-info" name="accion4" type="submit" >Eliminar del carrito</button>
                         </label>
                     </form>
+                    <form action='product_action_4' method="post">
+                        <label class="btn btn-link">
+                            <button class="btn btn-info" name="accion5" type="submit" >Agregar comentario</button>
+                        </label>
+                    </form>
                 </div>
                 <%}%>
             </div>
         </div>
     </body>
 </html>
+<%@ include file="footer.jsp" %>
