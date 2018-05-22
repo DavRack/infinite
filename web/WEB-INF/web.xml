@@ -20,6 +20,18 @@
         <servlet-name>edit_description</servlet-name>
         <servlet-class>edit_description</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>product_action</servlet-name>
+        <servlet-class>product_action</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>product_action_2</servlet-name>
+        <servlet-class>product_action_2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>product_action_3</servlet-name>
+        <servlet-class>product_action_3</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>catalogo</servlet-name>
         <url-pattern>/catalogo</url-pattern>
@@ -39,6 +51,18 @@
     <servlet-mapping>
         <servlet-name>edit_description</servlet-name>
         <url-pattern>/edit_description</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>product_action</servlet-name>
+        <url-pattern>/product_action</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>product_action_2</servlet-name>
+        <url-pattern>/product_action_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>product_action_3</servlet-name>
+        <url-pattern>/product_action_3</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

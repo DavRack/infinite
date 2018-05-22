@@ -34,24 +34,26 @@
                         <%int L = comentarios.size();
                             if (L > 0) {%>
                         <%for (int i = 0; i < L; i++) {
-                        models.comment comentario = (models.comment) comentarios.get(i);%>
+                                models.comment comentario = (models.comment) comentarios.get(i);%>
                         <div class="jumbotron">
                             <h3>"<%out.println(comentario.get_description());%>"</h3>
-                            
+
                             <h4>Fecha: <%out.println(comentario.get_date());%></h4>
                             <h4>Autor: <%out.println(comentario.get_author().get_name());%></h4>
-                            
-                        </div>
 
+                        </div>
                         <%}
                             }%>
-                        <div class="jumbotron">
-                            <h3>Credo del programador</h3>
-                            <p>Éste es mi codigo, hay muchos como el pero este es mio, mi codigo es mi mejor amigo, es mi vida. Debo dominarlo 
-                                como debo dominar mi vida. sin mi, mi codigo es inservible; sin mi codigo yo soy inservible. debo programar correctamente 
-                                mi codigo, debo codificar antes que ataquen los bugs que tratan de destruirme.
-                            </p>
-                        </div>
+                        <form action='product_action' method="post" >
+                            <button class="btn btn-secondary" name="accion" type="submit" value="agregar">Agragar a la lista de deseados</button>
+                        </form>
+                        <form action='product_action_2' method="post">
+                            <button class="btn btn-secondary" name="accion2" type="submit" value="eliminar">Eliminar de la lista de deseados</button>
+                        </form>
+                        <form action='product_action_3' method="post">
+                            <button class="btn btn-secondary" name="accion3" type="submit" value="comprar">Comprar</button>
+                        </form>
+
                     </div>
                 </div>
             </div>
