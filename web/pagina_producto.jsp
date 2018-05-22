@@ -51,7 +51,7 @@
                             <button class="btn btn-secondary" name="accion2" type="submit" value="eliminar">Eliminar de la lista de deseados</button>
                         </form>
                         <form action='product_action_3' method="post">
-                            <button class="btn btn-secondary" name="accion3" type="submit" value="comprar">Comprar</button>
+                            <button class="btn btn-secondary" name="accion3" type="submit" value="carrito">Agregar al carrito</button>
                         </form>
 
                     </div>
