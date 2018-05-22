@@ -30,7 +30,7 @@ public class product_action_3 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            models.user.get_active_user().get_bill_list().add(models.product.get_active_product());
+            //models.user.get_active_user().get_bill_list().add(models.product.get_active_product());
             response.sendRedirect("pagina_producto.jsp");
         }
     }

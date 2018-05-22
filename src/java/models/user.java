@@ -146,6 +146,10 @@ public class user {
         this.wishlist = wishlist;
     }
 
+    public void set_bill_list(LinkedList bill_list) {
+        this.bill_list = bill_list;
+    }
+
     
     public void append_to_product_list(product product_object){
         this.get_product_list().add(product_object);
@@ -198,6 +202,7 @@ public class user {
         this.set_fake_user(false);
         this.set_wishlist(wishlist);
         this.set_friendslist(friends);
+        this.set_bill_list(bill_list);
 
         if (this instanceof user) {
             this.add_users();
