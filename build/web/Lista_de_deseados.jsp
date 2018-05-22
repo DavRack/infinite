@@ -22,10 +22,18 @@
                 Iterator iter = lista.iterator();
                 if (!lista.isEmpty()) {
                     while (iter.hasNext()) {
-                        models.product pro = (models.product) iter.next();
-                        out.print(pro.toString());
-                    }
-                }else{
+
+                        models.product producto = (models.product) iter.next();
+            %>
+            <div class="jumbotron">
+                <h2>Nombre:</h2><h4><%out.println(producto.get_name());%></h4><br><br>
+                <h2>Categoria:</h2><h4> <%out.println(producto.get_category());%></h4><br><br>
+                <h2>Precio:</h2><h4> <%out.println(producto.get_price());%></h4><br>
+                <h2>Descripcion: </h2><h4><p><%out.println(producto.get_description());%></p></h4><br>
+                <h2>Vendedor: </h2><h4><%out.println(producto.get_seller().get_name());%></h4>
+            </div>
+            <% }
+                } else {
                     out.println("De momento, usted no tiene productos en su lista de desados.");
                 }
             %>
