@@ -18,17 +18,19 @@ public class txt {
 
     public static void read_txt() {
         //solo se pueden leer los archivos que estan en 
-        // 
+        
         String fname = "datos.txt";
         String line;
         try {
-            FileReader archivo = new FileReader("C:\\Users\\pavilion\\Desktop\\datos.txt");
+            FileReader archivo = new FileReader("C:\\Users\\David\\Documents\\GitHub\\infinite\\datos.txt");
 
             if (archivo.ready()) {
                 BufferedReader Reader = new BufferedReader(archivo);
                 while ((line = Reader.readLine()) != null) {
                     lineas.add(line);
+                    System.out.println(line);
                 }
+                
                 Reader.close();
             } else {
                 System.out.println("El archivo no existe");
