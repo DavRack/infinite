@@ -30,6 +30,9 @@ public class catalogo extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            String pro = request.getParameter("producto");
+            models.product.search_category(pro);
+            response.sendRedirect("Search.jsp");
                         
         }
     }

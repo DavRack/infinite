@@ -351,11 +351,11 @@ public class user {
     public static String go_home(){
         
         if (models.user.get_active_user() instanceof admin){
-            return "Postlog_admin";
+            return "Postlog_admin.jsp";
         }else if (models.user.get_active_user() instanceof seller){
-            return "Postlog_seller";
+            return "Postlog_seller.jsp";
         }else{
-            return "Postlog_lobby";
+            return "Postlog_lobby.jsp";
         }
          
     }

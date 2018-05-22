@@ -13,17 +13,19 @@
     </head>
     <body>
         <div class="container">
-        <h3><br><br><br>
-            Las categorias dis ponibles actualmente son:
-        </h3>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Acción</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Aventuras</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Conducción</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Deportes</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Disparos</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Plataformas</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Simuladores</a>
-        <a class="btn btn-secondary" href="Servlet_Users" role="button">Terror</a>
+            <h3><br><br><br>
+                Las categorias dis ponibles actualmente son:
+            </h3>
+            <form action='catalogo' >
+            <button class="btn btn-secondary" name="producto" type="submit" value="Acción">Acción</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Aventuras">Aventuras</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Conducción">Conducción</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Deportes">Deportes</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Disparos">Disparos</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Plataformas">Plataformas</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Simuladores">Simuladores</button>
+            <button class="btn btn-secondary" name="producto" type="submit" value="Terror">Terror</button>
+            </form>
         </div>
     </body>
 </html>
