@@ -50,7 +50,7 @@
                     
                     if (models.user.get_active_user()!= null && models.product.search_product()) {
                 %>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <div class="btn-group" >
                     <form action='product_action' method="post" >
                         <label class="btn btn-lin">
                             <button class="btn btn-info" name="accion" type="submit" >Agragar a la lista de deseados</button>
@@ -71,7 +71,7 @@
                             <button class="btn btn-info" name="accion4" type="submit" >Eliminar del carrito</button>
                         </label>
                     </form>
-                    <form action='product_action_4' method="post">
+                    <form action='new_comment.jsp' method="post">
                         <label class="btn btn-link">
                             <button class="btn btn-info" name="accion5" type="submit" >Agregar comentario</button>
                         </label>
