@@ -180,7 +180,17 @@ public class product {
         //    return null;
         //}
         return busqueda_actual;
-    }    
+    }
+    public static boolean search_product(){
+        Iterator iter = user.get_active_user().get_product_list().iterator();
+        while(iter.hasNext()){
+            product pro = (product)iter.next();
+            if(pro.get_name().equals(active_product)){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public static LinkedList search_category(String objetive_category) {
         /*busca el productos por la categor�a dada, retorna una lista de productos que coincidan con la categor�a,

@@ -14,11 +14,24 @@
     </head>
     <body>
         <div class="container">
+            <br><br><br>
             <h1>¿Que desea hacer?</h1>
             <br><br><br>
-            
+            <form action="carrito.jsp">
+                <button class="btn btn-secondary" name="producto" type="submit" value="Acción">Ver carrito</button>
+            </form>
+            <%  if(models.user.get_active_user().get_bill_list().size()>0){
+                if (models.user.get_active_user().get_money() > models.bill.total_price(models.user.get_active_user().get_bill_list())) {%>
+            <form action="consolidar_compra" method="post">
+                <button class="btn btn-secondary" name="producto" type="submit" value="Acción">Consolidar compra</button>
+            </form>
+            <%} else {
+            %>
+            No tiene dinero suficiente para realizar la compra
+            <%}}%>
+
         </div>
-        
-    </body>
+
+    </body> 
 </html>
 <%@ include file="footer.jsp" %>

@@ -36,6 +36,10 @@
         <servlet-name>product_action_4</servlet-name>
         <servlet-class>product_action_4</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>consolidar_compra</servlet-name>
+        <servlet-class>consolidar_compra</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>catalogo</servlet-name>
         <url-pattern>/catalogo</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>product_action_4</servlet-name>
         <url-pattern>/product_action_4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consolidar_compra</servlet-name>
+        <url-pattern>/consolidar_compra</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

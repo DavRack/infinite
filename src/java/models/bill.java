@@ -34,7 +34,7 @@ public class bill {
         return cont;
     }
     
-    public double consolidate_purchase(LinkedList<product> listgames){
+    public static double consolidate_purchase(LinkedList<product> listgames){
         
         double price = total_price(listgames);
         double money = user.get_active_user().get_money();

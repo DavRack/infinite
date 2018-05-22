@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class product_action_3 extends HttpServlet {
+public class consolidar_compra extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,8 +30,9 @@ public class product_action_3 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            models.user.get_active_user().get_bill_list().add(models.product.get_active_product());
-            response.sendRedirect("pagina_producto.jsp");
+            models.bill.consolidate_purchase( models.user.get_active_user().get_bill_list());
+            response.sendRedirect("Postlog_lobby.jsp");
+            
         }
     }
 

@@ -46,7 +46,9 @@
                             }%>
                     </div>
                 </div>
-
+                <%
+                    if (models.product.search_product()) {
+                %>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <form action='product_action' method="post" >
                         <label class="btn btn-lin">
@@ -69,6 +71,7 @@
                         </label>
                     </form>
                 </div>
+                <%}%>
             </div>
         </div>
     </body>
