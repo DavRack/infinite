@@ -25,6 +25,8 @@
             <a class="btn btn-secondary" href="Categories.jsp" id="categories" role="button">Ver Categorias</a>
             <a class="btn btn-secondary" href="catalogo.jsp" role="button">Ver Catálogo Completo</a>
             <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver Producto más Vendido</a>
+            <a class="btn btn-secondary" href="consolidar_compra.jsp" role="button">Consolidar Compra</a>
+            
             <br><br><br>
             Mi perfil:
             <br><br>
