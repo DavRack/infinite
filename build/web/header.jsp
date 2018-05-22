@@ -21,7 +21,7 @@
                         <a class="navbar-brand " href=<%if (models.user.get_active_user() == null) {
                                 out.println("login.jsp");
                             } else {
-                                models.user.go_home();
+                                out.print(models.user.go_home());
                             }%>><%if (models.user.get_active_user() == null) {
                                 out.println("Log in");
                             } else {
