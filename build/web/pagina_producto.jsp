@@ -58,12 +58,12 @@
                 </div>
                 <%
 
-                    if (models.user.users.containsKey(models.user.get_active_user().get_nikname()) && models.user.get_active_user() != null && models.product.search_product()) {
+                    if (models.user.get_active_user() != null &&  models.product.search_product() && models.user.users.containsKey(models.user.get_active_user().get_nikname()) ) {
                 %>
                 <div class="btn-group" >
                     <form action='product_action' method="post" >
                         <label class="btn btn-lin">
-                            <button class="btn btn-info" name="accion" type="submit" >Agragar a la lista de deseados</button>
+                            <button class="btn btn-info" name="accion" type="submit" >Agregar a la lista de deseados</button>
                         </label>
                     </form>
                     <form action='product_action_2' method="post">
