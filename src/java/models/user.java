@@ -182,7 +182,7 @@ public class user {
         return all_users.size();
     }
 
-    public user(String name, String nikname, String email, String birth_date, String nationality, String password, double money) {
+    public user(String name, String nikname, String email, String birth_date, String nationality, String password, double money, boolean fake_user) {
 
         LinkedList<user> friends = new LinkedList<>();
         LinkedList<product> wishlist = new LinkedList<>();
@@ -199,7 +199,7 @@ public class user {
         this.set_ban(ban);
         this.set_money(money);
         this.set_activity(0);
-        this.set_fake_user(false);
+        this.set_fake_user(fake_user);
         this.set_wishlist(wishlist);
         this.set_friendslist(friends);
         this.set_bill_list(bill_list);

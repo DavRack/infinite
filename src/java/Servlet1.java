@@ -43,15 +43,16 @@ public class Servlet1 extends HttpServlet {
             
             
             if(rol.equals("Comprador")){
-                models.user usuario = new models.user(name, nickname, email, birth_date, nationality, password, money);
-                response.sendRedirect("login.jsp");
+                models.user usuario = new models.user(name, nickname, email, birth_date, nationality, password, money, false);
+                
                 
             }else if(rol.equals("Vendedor")){
-                models.seller vendedor = new models.seller(name, nickname, email, birth_date, nationality, password , money);
+                models.seller vendedor = new models.seller(name, nickname, email, birth_date, nationality, password , money, false);
                 
             }else{
-                models.admin administrador = new models.admin(name, nickname, email, birth_date, nationality, password, money);
+                models.admin administrador = new models.admin(name, nickname, email, birth_date, nationality, password, money, false);
             }
+            response.sendRedirect("login.jsp");
             
             
            

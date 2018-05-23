@@ -48,7 +48,7 @@ public class txt {
         for (int i = 0; i < l; i++) {
             String[] separados = lineas.get(i).split(";");
             String rol = separados[0];
-            user nuevo = new models.user(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]));
+            user nuevo = new models.user(separados[1], separados[2], separados[3], separados[4], separados[5], separados[6], Double.parseDouble(separados[7]),Boolean.parseBoolean(separados[8]));
             
         }
 
