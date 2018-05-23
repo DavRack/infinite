@@ -36,6 +36,7 @@ public class eliminar extends HttpServlet {
             models.product pro = (models.product) iter.next();
             if (pro.get_name().equals(product)) {
                 models.product.get_products().remove(pro);
+                models.product.get_all_products().remove(pro);
             }
         }
         if (models.user.get_active_user() instanceof models.seller) {

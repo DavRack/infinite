@@ -32,7 +32,9 @@ public class Servlet_Users extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            
+            models.product mas_vendido = models.product.most_sold();
+            models.product.set_active_by_name(mas_vendido.get_name());
+            response.sendRedirect("pagina_producto.jsp");
         }
     }
 

@@ -12,7 +12,7 @@ public class product {
     private String category;
     private int solds;
     private LinkedList comment_list;
-    
+    public static LinkedList <product> all_products= new LinkedList<>();
     public static product active_product;
     private static LinkedList<product> products = new LinkedList<>();
     public static LinkedList<product> busqueda_actual = new LinkedList<>();
@@ -38,6 +38,21 @@ public class product {
             }
         }
         
+    }
+    public static LinkedList get_all_products(){
+        return models.product.all_products;
+    }
+    public static product most_sold(){
+        LinkedList lista = get_all_products();
+        Iterator iter = lista.iterator();
+        product most_sold = (product) lista.getFirst();
+        while(iter.hasNext()){
+            product producto = (product) iter.next();
+            if(producto.get_solds() > most_sold.get_solds()){
+                most_sold = producto;
+            }
+        }
+        return most_sold;
     }
 
     public void set_name(String name) {
@@ -119,6 +134,7 @@ public class product {
         products.add(this);
         seller.append_to_product_list(this);
         new News(seller.get_nikname()+" ha subido un nuevo producto!!!", "El vendedor"+seller.get_nikname()+" ha subido un nuevo elemento, "+name+", asegurate de echarle un ojo!!!");
+        all_products.add(this);
         //falta lo de la lista de el seller para agregar el producto a si mismo
     }
     
