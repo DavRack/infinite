@@ -27,7 +27,7 @@
                 ¿Qué desea hacer a continuación?
             </h5>
             <br><br>
-            Editar:
+            Editar productos de la tienda:
             <br><br>
 
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo3">Titulo</button>
@@ -72,9 +72,9 @@
             <br><br>
             
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo6">Ver comentarios de un producto</button>
-            <form action='Search.jsp' method='post'>
+            <form action='Search_Products' method='post'>
                 <div id="demo6" class="collapse"><br>
-                    <input type="text" name="juego" class="form-control" placeholder="Introduzca el nombre del producto del cual quiere ver los comentarios" required>
+                    <input type="text" name="search" class="form-control" placeholder="Introduzca el nombre del producto del cual quiere ver los comentarios" required>
                     <br>
                     <button type="submit" class="btn btn-primary">Buscar</button>
                 </div>
@@ -91,11 +91,7 @@
                     <button type="submit" class="btn btn-primary">Bannear</button>
                 </div>
             </form>
-            
-            
-            
-            
-            
+
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo8">Desbanear usuario</button>
             <form action='UnBan' method='post'>
                 <div id="demo8" class="collapse"><br>
