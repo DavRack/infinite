@@ -1,2 +1,3 @@
+user;laura;lau;lau@mail.com;01/03/2018;Estados unidos;123;19976.0;false
 user;david;d;davidlo176@gmail.com;01/01/2018;Colombia;d;123456.0;false
 user;g;g;g@g.com;01/01/2018;Colombia;g;123456.0;false
