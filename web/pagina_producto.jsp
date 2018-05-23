@@ -58,7 +58,7 @@
                 </div>
                 <%
 
-                    if (models.user.users.containsKey(models.user.get_active_user()) && models.user.get_active_user() != null && models.product.search_product()) {
+                    if (models.user.users.containsKey(models.user.get_active_user().get_nikname()) && models.user.get_active_user() != null && models.product.search_product()) {
                 %>
                 <div class="btn-group" >
                     <form action='product_action' method="post" >
