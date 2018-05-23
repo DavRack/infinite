@@ -209,7 +209,32 @@ public class user {
         }
         this.add_all_users();
     }
-
+    
+    public String to_string_txt(){
+        String nikname = this.get_nikname();
+        String name = this.get_name();
+        String email = this.get_email();
+        String birth = this.get_birth_date();
+        String nationality = this.get_nationality();
+        String password = this.get_password();
+        double money = this.get_money();
+        boolean fake = this.get_fake_user();
+        String rol;
+        if (models.admin.admins.containsKey(nikname)){
+            rol="admin";
+        }else if (models.user.all_users.containsKey(nikname)){
+            rol="user";
+        }else{
+            rol="seller";
+        }
+    
+        String Registro = rol+";"+name+";"+nikname+";"+email+
+                ";"+birth+";"+nationality+";"+password+";"+ String.valueOf(money)+
+                ";"+String.valueOf(fake);
+        
+        return Registro;
+    }
+    
     // falta importar los datos del txt
     public static boolean log_in_test(String nikname, String password) {
         if (all_users.containsKey(nikname)) {
