@@ -23,10 +23,10 @@
                             } else {
                                 out.print(models.user.go_home());
                             }%>><%if (models.user.get_active_user() == null) {
-                                out.println("Log in");
-                            } else {
-                                out.println("Home");
-                            }%></a>
+                                    out.println("Log in");
+                                } else {
+                                    out.println("Home");
+                                }%></a>
                     </li>
                     <li class="nav-item">
                         <a class="navbar-brand " href=<%if (models.user.get_active_user() == null) {
@@ -34,18 +34,18 @@
                             } else {
                                 out.println("log_out");
                             }%>><%if (models.user.get_active_user() == null) {
-                                out.println("Sign In");
-                            } else {
-                                out.println("Log Out");
-                            }%></a>
+                                    out.println("Sign In");
+                                } else {
+                                    out.println("Log Out");
+                                }%></a>
                     </li>
-                    <form action="Datos1" method="post">
-                        <li class="nav-item">
-                            <input type="submit" class="navbar-brand" href="#" style="border: 0;background-color: transparent" value="Generar Datos">
-                        </li>
-                    </form>
+
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="datos_txt">Generar Datos desde un txt</a>
+                        <a class="navbar-brand" href="Datos1" value="Generar Datos">Generar Datos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="datos_txt">Generar Datos desde un txt</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action='Search_Products' method="post">

@@ -23,7 +23,7 @@ public class txt {
         
         String line;
         try {
-            FileReader archivo = new FileReader("C:\\Users\\pavilion\\Desktop\\datos.txt");
+            FileReader archivo = new FileReader("C:\\Users\\user\\Documents\\GitHub\\infinite\\datos.txt");
 
             if (archivo.ready()) {
                 BufferedReader Reader = new BufferedReader(archivo);
