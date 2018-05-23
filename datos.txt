@@ -1,1 +1,2 @@
-user;d;d;b@mail.com;08/04/2018;España;d;200008.0;false
+user;david;d;davidlo176@gmail.com;01/01/2018;Colombia;d;123456.0;false
+user;g;g;g@g.com;01/01/2018;Colombia;g;123456.0;false

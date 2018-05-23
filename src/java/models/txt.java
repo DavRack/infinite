@@ -66,6 +66,7 @@ public class txt {
             writer = new BufferedWriter(new FileWriter(file_name));
             for (HashMap.Entry<String, user> entry : lista.entrySet()) {
                 writer.write(entry.getValue().to_string_txt());
+                writer.newLine();
             }
             
             writer.close();
