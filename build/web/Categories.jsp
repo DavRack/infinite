@@ -16,13 +16,13 @@
             <h3><br><br><br>
                 Las categorias dis ponibles actualmente son:
             </h3>
-            <form action='catalogo' >
-            <button class="btn btn-secondary" name="producto" type="submit" value="Aventuras">Aventuras</button>
-            <button class="btn btn-secondary" name="producto" type="submit" value="Deportes">Deportes</button>
-            <button class="btn btn-secondary" name="producto" type="submit" value="Disparos">Disparos</button>
-            <button class="btn btn-secondary" name="producto" type="submit" value="Plataformas">Plataformas</button>
-            <button class="btn btn-secondary" name="producto" type="submit" value="Simuladores">Simuladores</button>
-            <button class="btn btn-secondary" name="producto" type="submit" value="Terror">Terror</button>
+            <form action='catalogo' method='post' >
+                <button class="btn btn-secondary" name="producto" type="submit" value="Aventuras">Aventuras</button>
+                <button class="btn btn-secondary" name="producto" type="submit" value="Deportes">Deportes</button>
+                <button class="btn btn-secondary" name="producto" type="submit" value="Disparos">Disparos</button>
+                <button class="btn btn-secondary" name="producto" type="submit" value="Plataformas">Plataformas</button>
+                <button class="btn btn-secondary" name="producto" type="submit" value="Simuladores">Simuladores</button>
+                <button class="btn btn-secondary" name="producto" type="submit" value="Terror">Terror</button>
             </form>
         </div>
     </body>

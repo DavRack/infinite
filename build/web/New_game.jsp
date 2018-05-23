@@ -33,10 +33,8 @@
                 </div>
 
                 Categoria:
-                <select name ="nationality">
-                    <option value="Acción">Acci&oacute;n</option>
+                <select name ="category">
                     <option value="Aventuras">Aventuras</option>
-                    <option value="Conducción">Conducci&o&oacute;n</option>
                     <option value="Deportes">Deportes</option>
                     <option value="Disparos">Disparos</option>
                     <option value="Simuladores">Simuladores</option>
