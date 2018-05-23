@@ -133,7 +133,7 @@ public class product {
         this.set_comment_list(comment_list);
         products.add(this);
         seller.append_to_product_list(this);
-        new News(seller.get_nikname()+" ha subido un nuevo producto!!!", "El vendedor"+seller.get_nikname()+" ha subido un nuevo elemento, "+name+", asegurate de echarle un ojo!!!");
+        new News("¡" + seller.get_nikname()+ " ha subido un nuevo producto!", "El vendedor "+seller.get_nikname()+" ha subido un nuevo elemento, "+name+", ¡asegurate de echarle un ojo!");
         all_products.add(this);
         //falta lo de la lista de el seller para agregar el producto a si mismo
     }
