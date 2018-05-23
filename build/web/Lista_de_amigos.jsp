@@ -30,7 +30,7 @@
                     <h2>Nombre: <%out.println(usuario.get_name());%></h2>
                     <h2>Nickname:<%out.println(usuario.get_nikname());%></h2>
                     <h2>Nacionalidad:<%out.println(usuario.get_nationality());%></h2>
-                    <button class="btn btn-secondary" name="usuario" type="submit" value="<%usuario.get_name();%>">Eliminar</button>
+                    <button class="btn btn-secondary" name="usuario" type="submit" value="<%out.print(usuario.get_nikname());%>">Eliminar</button>
                 </div>
 
                 <%}

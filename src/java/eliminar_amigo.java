@@ -7,6 +7,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Iterator;
+import java.util.LinkedList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -34,11 +35,13 @@ public class eliminar_amigo extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             String friend = request.getParameter("usuario");
             int cont = models.user.get_active_user().get_friendlist().size();
-            for (int i = 0; i < cont; i++) {
-                models.user actual = (models.user)models.user.get_active_user().get_friendlist().get(i);
-                String nick = actual.get_nikname();
+            LinkedList actual = models.user.get_active_user().get_friendlist();
+            models.user usuario = null;
+            for (int i = 0; i < cont; i++) {           
+                usuario=(models.user)actual.get(i);
+                String nick = usuario.get_nikname();
                 if(nick.equals(friend)){
-                    user.get_active_user().get_friendlist().remove(i);
+                    user.get_active_user().get_friendlist().remove(actual);
                 }   
             }
             response.sendRedirect("Lista_de_amigos.jsp");
