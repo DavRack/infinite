@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
+/** 
  *
- * @author pavilion
+ * @author pavilio
  */
 @WebServlet(urlPatterns = {"/Ban"})
 public class Ban extends HttpServlet {
