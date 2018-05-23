@@ -58,10 +58,10 @@
                 </div>
             </form>
 
-            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo2">Eliminar</button>
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo2">Eliminar un producto de la tienda</button>
             <form action='eliminar' method='post'>
                 <div id="demo2" class="collapse"><br>
-                    <input type="text" name="juego" class="form-control" placeholder="Introduzca el nombre del producto" required>
+                    <input type="text" name="juego" class="form-control" placeholder="Introduzca el nombre del producto a eliminar" required>
                     <br>
                     <button type="submit" class="btn btn-primary">Eliminar</button>
                 </div>
@@ -80,6 +80,8 @@
                 </div>
             </form>
 
+            <br><br>
+            
             Usuarios:
             <br><br>
                         

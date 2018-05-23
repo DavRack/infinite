@@ -29,9 +29,9 @@
             <br><br>
             <a class="btn btn-secondary" href="Library.jsp" id="categories" role="button">Ver productos Existentes</a>
             <a class="btn btn-secondary" href="New_game.jsp" id="categories" role="button">Poner a la venta un producto nuevo</a>
-            <br><br>
+            <br><br><br>
 
-            Editar:
+            Editar uno de sus productos:
 
             <br><br>
 
