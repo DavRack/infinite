@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author pavilion
  */
-@WebServlet(urlPatterns = {"/Ban"})
-public class Ban extends HttpServlet {
+@WebServlet(urlPatterns = {"/remove_comment"})
+public class remove_comment extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,9 +32,9 @@ public class Ban extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String nickname = request.getParameter("usuario");
-            models.user.all_users.get(nickname).set_ban(true);
-            response.sendRedirect("Postlog_admin.jsp");
+            int comentario = Integer.parseInt(request.getParameter("producto"));
+            models.product.get_active_product().get_comment_list().remove(comentario);
+            response.sendRedirect("pagina_producto.jsp");
         }
     }
 
