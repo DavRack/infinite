@@ -51,8 +51,8 @@
             </form>
             <a class="btn btn-secondary" href="consolidar_compra.jsp" role="button">Consolidar Compra</a>
             <br><br><br>
-            ¿Guargar datos?<br><br>
-            <a class="btn btn-secondary" href="save_data" role="button">¿Guargar datos?</a><br><br><br>
+            Guargar datos<br><br>
+            <a class="btn btn-secondary" href="save_data" role="button">Guargar datos</a><br><br><br>
             <form action='Servlet2' method='post'>
                 <a class="btn btn-secondary" href="log_out" role="button">Cerrar Sesión</a><br>
             </form>

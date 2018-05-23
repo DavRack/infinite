@@ -36,8 +36,8 @@ public class Datos1 extends HttpServlet {
             models.seller c = new models.seller("c", "c", "c@mail.com","09/04/2018", "Colombia", "c", 19999999,true);
             models.admin Daniel = new models.admin("Daniel", "lun", "DLMXX@gmail.com","01/08/1997", "Perú", "con", 50000,true);
             models.admin b = new models.admin("b", "b", "b@mail.com","08/04/2018", "EEUU", "b", 199999,true);
-            models.product cuphead = new models.product("cuphead", "cuphead es un juego de plataformas dificil", laura,1000, "Plataformas");
-            models.product Racin_cup = new models.product("Racin cup","este juego no exciste, ea no le da pena", laura, 2000 , "Simuladores");
+            models.product cuphead = new models.product("cuphead", "cuphead es un juego de plataformas dificil.", laura,1000, "Plataformas");
+            models.product Racin_cup = new models.product("Racin cup","este juego no existe.", laura, 2000 , "Simuladores");
             models.product.active_product = cuphead;
             models.user a = new models.user("a", "a" ,"a@mail.com","20/05/2018","Perú", "a", 100000,true);
             models.user x = new models.user("x", "x" ,"a@mail.com","20/05/2018","Colombia", "x", 100000,true);

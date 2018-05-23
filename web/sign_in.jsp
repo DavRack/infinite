@@ -120,10 +120,10 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
+                            Aceptar terminos y condiciones.
                         </label>
                         <div class="invalid-feedback">
-                            You must agree before submitting.
+                            Debes aceptar los terminos y condiciones.
                         </div>
                     </div>
                 </div>
