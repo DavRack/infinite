@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class txt {
 
     public static LinkedList<String> lineas = new LinkedList<>();
-    static String file_name = "C:\\Users\\David\\Documents\\GitHub\\infinite\\datos.txt";
+    static String file_name = "C:\\Users\\user\\Documents\\GitHub\\infinite\\datos.txt";
 
     public static void read_txt() {
         //solo se pueden leer los archivos que estan en 

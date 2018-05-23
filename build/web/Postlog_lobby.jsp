@@ -24,9 +24,7 @@
             <br><br>
             <a class="btn btn-secondary" href="Categories.jsp" id="categories" role="button">Ver Categorias</a>
             <a class="btn btn-secondary" href="catalogo.jsp" role="button">Ver Catálogo Completo</a>
-            <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver Producto más Vendido</a>
-            <a class="btn btn-secondary" href="consolidar_compra.jsp" role="button">Consolidar Compra</a>
-            
+            <a class="btn btn-secondary" href="Servlet_Users" role="button">Ver Producto más Vendido</a>            
             <br><br><br>
             Mi perfil:
             <br><br>
@@ -51,6 +49,7 @@
                     <button type="submit" class="btn btn-primary">Agregar</button>
                 </div>
             </form>
+            <a class="btn btn-secondary" href="consolidar_compra.jsp" role="button">Consolidar Compra</a>
             <br><br><br>
             ¿Guargar datos?<br><br>
             <a class="btn btn-secondary" href="save_data" role="button">¿Guargar datos?</a><br><br><br>
