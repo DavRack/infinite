@@ -6,18 +6,18 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Iterator;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import models.user;
 
 /**
  *
  * @author user
  */
-@WebServlet(urlPatterns = {"/Datos1"})
-public class Datos1 extends HttpServlet {
+public class eliminar_amigo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,19 +32,24 @@ public class Datos1 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            models.seller laura= new models.seller("Laura","arobol","laura@arobol.com","14/03/1999","Colombia", "neron", 10000);
-            models.seller c = new models.seller("c", "c", "c@mail.com","09/04/2018", "Colombia", "c", 19999999);
-            models.admin Daniel = new models.admin("Daniel", "lun", "DLMXX@gmail.com","01/08/1997", "Perú", "con", 50000);
-            models.admin b = new models.admin("b", "b", "b@mail.com","08/04/2018", "España", "b", 199999);
-            models.product cuphead = new models.product("cuphead", "cuphead es un juego de plataformas dificil", laura,1000, "Plataformas");
-            models.product Racin_cup = new models.product("Racin cup","este juego no exciste, ea no le da pena", laura, 2000 , "Conducción");
-            models.product.active_product = cuphead;
-            models.user a = new models.user("a", "a" ,"a@mail.com","20/05/2018","Perú", "a", 100000);
-            models.user x = new models.user("x", "x" ,"a@mail.com","20/05/2018","Colombia", "x", 100000);
-            models.user y = new models.user("y", "y" ,"a@mail.com","20/05/2018","EEUU", "y", 100000);
-            models.comment arobol = new models.comment(a,"21/05/2018",10,"muy buen juego", cuphead);
-            models.comment xa = new models.comment(x, "17/04/1999", 5, "nada mal", cuphead);
-            response.sendRedirect("index.jsp");
+            String friend = request.getParameter("usuario");
+            int cont = models.user.get_active_user().get_friendlist().size();
+            for (int i = 0; i < cont; i++) {
+                models.user actual = (models.user)models.user.get_active_user().get_friendlist().get(i);
+                String nick = actual.get_nikname();
+                if(nick.equals(friend)){
+                    user.get_active_user().get_friendlist().remove(i);
+                }   
+            }
+            response.sendRedirect("Lista_de_amigos.jsp");
+            /*while(iter.hasNext()){
+                models.user name = (models.user)iter.next();
+                if((name.get_nikname()).equals(friend)){
+                    user.get_active_user().get_friendlist().remove(name);
+                    response.sendRedirect("Postlog_lobby.jsp");
+                }
+            }
+            //response.sendRedirect("Postlog_lobby.jsp");*/
         }
     }
 

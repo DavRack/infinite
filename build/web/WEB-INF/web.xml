@@ -44,6 +44,10 @@
         <servlet-name>servlet_new_comment</servlet-name>
         <servlet-class>servlet_new_comment</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>eliminar_amigo</servlet-name>
+        <servlet-class>eliminar_amigo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>catalogo</servlet-name>
         <url-pattern>/catalogo</url-pattern>
@@ -87,6 +91,10 @@
     <servlet-mapping>
         <servlet-name>servlet_new_comment</servlet-name>
         <url-pattern>/servlet_new_comment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>eliminar_amigo</servlet-name>
+        <url-pattern>/eliminar_amigo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

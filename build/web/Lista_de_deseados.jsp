@@ -15,28 +15,32 @@
     </head>
     <body>
         <div class="container"><br><br>
-            <h1>Lista de deseados</h1><br><br>
-            <%
-                LinkedList lista = models.user.get_active_user().get_whishlist();
-                System.out.println(lista);
-                Iterator iter = lista.iterator();
-                if (!lista.isEmpty()) {
-                    while (iter.hasNext()) {
+            <h1 class='display-2'>Lista de deseados</h1>
 
-                        models.product producto = (models.product) iter.next();
+            <br><br>
+
+            <%int l = models.user.get_active_user().get_whishlist().size();%>
+            <%if (l > 0) {%>
+            <%for (int i = 0; i < l; i++) {
+                    models.product producto = (models.product) models.user.get_active_user().get_whishlist().get(i);
             %>
+
             <div class="jumbotron">
-                <h2>Nombre:</h2><h4><%out.println(producto.get_name());%></h4><br><br>
-                <h2>Categoria:</h2><h4> <%out.println(producto.get_category());%></h4><br><br>
-                <h2>Precio:</h2><h4> <%out.println(producto.get_price());%></h4><br>
-                <h2>Descripcion: </h2><h4><p><%out.println(producto.get_description());%></p></h4><br>
-                <h2>Vendedor: </h2><h4><%out.println(producto.get_seller().get_name());%></h4>
+                <form action="ver_producto" method="post">
+                    <h2>Nombre: <%out.print(producto.get_name());%></h2>
+                    <h2>Precio: <%out.println(producto.get_price());%></h2>
+                    <h2>Descripcion: </h2>
+                    <h4><%out.println(producto.get_description());%></h4>
+                    <button class="btn btn-secondary" name="producto" type="submit" value="<%out.print(producto.get_name());%>">Ver más</button>
+                </form>
             </div>
-            <% }
-                } else {
-                    out.println("De momento, usted no tiene productos en su lista de desados.");
-                }
-            %>
+
+            <%}
+            } else {%>
+            <div class="jumbotron">
+                <h2>Ningun resultado</h2>
+            </div>
+            <%}%>
         </div>
     </body>
 </html>

@@ -13,23 +13,35 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <div class="container"><br><br>
-            <h1>Lista de amigos</h1><br><br>
-            <%
-                LinkedList lista = models.user.get_active_user().get_friendlist();
-                System.out.println(lista);
-                Iterator iter = lista.iterator();
-                if (!lista.isEmpty()) {
-                    while (iter.hasNext()) {
-                        models.user ami = (models.user) iter.next();
-                        out.print(ami.toString());
-                    }
-                }else{
-                    out.println("De momento, usted no tiene amigos.");
-                }
-            %>
-        </div>
+    <body><form action="eliminar_amigo" method="post">
+            <div class="container"><br><br>
+                <h1 class='display-2'>Lista de deseados</h1>
+
+                <br><br>
+
+                <%int l = models.user.get_active_user().get_friendlist().size();%>
+                <%if (l > 0) {%>
+                <%for (int i = 0; i < l; i++) {
+                        models.user usuario = (models.user) models.user.get_active_user().get_friendlist().get(i);
+                %>
+
+                <div class="jumbotron">
+
+                    <h2>Nombre: <%out.println(usuario.get_name());%></h2>
+                    <h2>Nickname:<%out.println(usuario.get_nikname());%></h2>
+                    <h2>Nacionalidad:<%out.println(usuario.get_nationality());%></h2>
+                    <button class="btn btn-secondary" name="usuario" type="submit" value="<%usuario.get_name();%>">Eliminar</button>
+                </div>
+
+                <%}
+            } else {%>
+                <div class="jumbotron">
+                    <h2>No tiene amigos.</h2>
+                </div>
+                <%}%>
+            </div>
+        </form>
+
     </body>
 </html>
 
