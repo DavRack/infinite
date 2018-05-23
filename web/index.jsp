@@ -54,17 +54,17 @@
             <div class="col-md-4">
                 <h2><%out.println(titular1);%></h2>
                 <p><%out.println(body1);%></p>
-                <p><a class="btn btn-secondary" href="#" role="button">Ir al producto &raquo;</a></p>
+                
             </div>
             <div class="col-md-4">
                 <h2><%out.println(titular2);%></h2>
                 <p><%out.println(body2);%></p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                
             </div>
             <div class="col-md-4">
                 <h2><%out.println(titular3);%></h2>
                 <p><%out.println(body3);%></p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                
             </div>
         </div>
 
