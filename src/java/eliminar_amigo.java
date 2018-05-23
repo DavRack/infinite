@@ -41,7 +41,7 @@ public class eliminar_amigo extends HttpServlet {
                 usuario=(models.user)actual.get(i);
                 String nick = usuario.get_nikname();
                 if(nick.equals(friend)){
-                    user.get_active_user().get_friendlist().remove(actual);
+                    user.get_active_user().get_friendlist().remove(i);
                 }   
             }
             response.sendRedirect("Lista_de_amigos.jsp");
