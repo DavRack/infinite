@@ -36,19 +36,29 @@
                         <%for (int i = 0; i < L; i++) {
                                 models.comment comentario = (models.comment) comentarios.get(i);%>
                         <div class="jumbotron">
+                            <h4>Comentario # <%out.print(i+1);%></h4><br>
                             <h3>"<%out.println(comentario.get_description());%>"</h3>
-
                             <h4>Fecha: <%out.println(comentario.get_date());%></h4>
                             <h4>Autor: <%out.println(comentario.get_author().get_name());%></h4>
+                            <%
+                                if (models.user.get_active_user() instanceof models.admin) {%>
+                            <br>
+                            <form action='remove_comment' method="post" >
+                                <label class="btn btn-lin">
+                                    <button class="btn btn-info" name="producto" type="submit" value="<%out.print(i);%>">Eliminar Comentario</button>
+                                </label>
+                            </form>
 
+                            <%    }
+                            %>
                         </div>
                         <%}
                             }%>
                     </div>
                 </div>
                 <%
-                    
-                    if (models.user.get_active_user()!= null && models.product.search_product()) {
+
+                    if (models.user.users.containsKey(models.user.get_active_user()) && models.user.get_active_user() != null && models.product.search_product()) {
                 %>
                 <div class="btn-group" >
                     <form action='product_action' method="post" >

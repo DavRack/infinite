@@ -79,23 +79,10 @@
                     <button type="submit" class="btn btn-primary">Buscar</button>
                 </div>
             </form>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <a class="btn btn-secondary" href="#" id="eliminar_comentario" role="button">Eliminar comentario </a>
-            <br><br>
+
             Usuarios:
             <br><br>
-            
-            
-            
-            
+                        
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo7">Banear usuario</button>
             <form action='Ban' method='post'>
                 <div id="demo7" class="collapse"><br>
